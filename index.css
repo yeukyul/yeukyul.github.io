@@ -99,9 +99,6 @@ div{
     z-index: 0;
 }
 
-#button{
-    
-}
 
 small {
     text-align: right;
@@ -110,4 +107,23 @@ small {
 
 .description{
     text-align: right;
+}
+
+.date{
+    text-align: right;
+    font-size: 15px;
+    color: grey;
+    margin-top: 0px;
+}
+
+.btn-secondary{
+    font-family: 'Julius Sans One', serif;
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+
+.btn-secondary:hover{
+    background-color: #000;
+    color: white;
 }
