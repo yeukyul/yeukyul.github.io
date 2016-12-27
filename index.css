@@ -1,0 +1,684 @@
+/******************* General ********************/
+/* set default font */
+
+/* fonts */
+p{
+    font-family: "Garamond", sans-serif;
+    font-size: 13pt;
+}
+
+h1{
+    font-size: 50pt;
+}
+
+h4.card-title{
+    font-size: 30pt;
+    font-family: "Cormorant Garamond", sans-serif;
+}
+
+nav{
+    background-color: white;
+}
+
+li{
+    font-family: "Source Serif Pro", sans-serif;
+}
+
+ul{
+    margin-bottom: 50px;
+}
+
+.navbar-brand{
+    margin-left: 8%;
+}
+
+a{
+    color: rgba(168, 187, 194, 1);
+}
+
+.title{
+    font-family: "Cormorant Garamond", sans-serif;
+    color: #a8bbc2;
+}
+
+.nav-link{
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 18px;
+    color: grey;
+
+}
+
+.nav-link:hover{
+    background-color: rgba(168, 187, 194, 1);
+    color: darkslategrey;
+}
+
+.glyphicon-border {
+      border: 3px solid #000;
+      padding: 5px;
+      border-radius: 50%;
+}
+
+/**CSS FOR THE RING**/
+
+.glyphicon-ring {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid white;
+  color: white;
+  display: inline-table;
+  text-align: center;
+  float: right;
+}
+/**CSS FOR ICON WITH NO BACKGROUND COLOR**/
+
+.glyphicon-ring .glyphicon-bordered {
+  font-size: 25px;
+  vertical-align: middle;
+  display: table-cell;
+}
+/**WITH AN ADDED BACKGROUND COLOR**/
+
+.glyphicon-gray {
+  color: white;
+  background: rgba(255,255,255,0);
+  border: 3px solid #fff;
+}
+
+.glyphicon-gray:hover {
+  /* background: #626262;*/
+  color: #626262;
+  border: 3px solid #626262;
+}
+
+.glyphicon-green {
+  color: rgba(168, 187, 194, 1);
+  background: rgba(255,255,255,0);
+  border: none;
+}
+
+.glyphicon-green:hover {
+  color: #fff;
+  background: rgba(168, 187, 194, 1);
+  border: 3px solid rgba(168, 187, 194, 1);
+}
+
+/* buttons */
+.btn-secondary{
+    font-family: 'Julius Sans One', serif;
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+    box-shadow: none;
+    
+}
+
+.btn-secondary:hover{
+    background-color: #000;
+    color: white;
+    box-shadow: none;
+}
+
+footer{
+    font-family: Avenir, sans-serif;
+    font-size: 10pt;
+    margin-right: 10%;
+    position: absolute;
+    bottom: 2%;
+    right: 0%;
+}
+
+/* relative position classes */
+.centered{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.center{
+    left : 50%;
+    text-align: center;
+
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+/******************* Home Page ********************/
+.under {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index:-1;
+}
+
+.over, .menu{
+    position: absolute;
+    left: 60%;
+    top: 35%;
+    z-index:-1;
+    width: 330px;
+}
+
+@media screen and (min-width : 1300px){
+    .over, .menu{
+        top: 30%;
+        width: 400px;
+    }
+    
+    .under{
+        
+    }
+}
+
+@media screen and (max-width: 850px) 
+              and (min-width : 680px){
+    .over {
+        position: absolute;
+        left: 50%;
+        top: 43%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .over {
+        position: absolute;
+        left: 35%;
+        width: 250px;
+    }
+}
+
+/* special elements */
+#name{
+    text-align: center;
+}
+
+#headerimg{
+    width: 100%;
+    background-size: cover;
+}
+
+#home-header{
+    position:relative;
+    height:100px;
+    width:100%;
+    background-position: center center;
+    background-size:cover;
+    left: 0;
+    top:0;
+    z-index: -999;
+    background-image: url("Images/header.png");
+}
+
+/******************* Resume Page ********************/
+
+#resume{
+    width: 100%;
+    border: 2px solid rgba(168, 187, 194, 1);
+}
+
+h1.options{
+    font-family: "Cormorant Garamond", sans-serif;
+}
+
+.card{
+     box-shadow: 5px 5px 5px rgba(125, 125, 125, 0.5);
+}
+
+body.resume{
+    /* background: #000; */
+}
+
+#writingSampleOption{
+    width: 100%;
+}
+
+#resumeOption{
+    width: 100%;
+}
+
+#download{
+    position: absolute;
+    right: 3%;
+    top: 1%;
+}
+
+
+
+/******************* About Me Page ********************/
+
+#portrait{
+    width: 55%;
+    float: left;
+    bottom: 0%;
+    position: absolute;
+}
+
+#intro{
+    right: 10%;
+    top: 18%;
+    width: 55%;
+    position: absolute;
+    text-align: right;
+}
+
+h1.hello{
+    /* color: #d6c897; */
+}
+
+#portraitbw{
+    width: 30%;
+}
+
+#aboutMe-header{
+    height: 80px;
+    right: 0%;
+}
+
+a.pagetab-item{
+    font-family: Didot;
+    font-size: 20pt;
+    color: rgb(168, 187, 194);
+}
+
+a.pagetab-item:link,
+a.pagetab-item:visited,
+a.pagetab-item:hover,
+a.pagetab-item:focus,
+a.pagetab-item:active {
+  text-decoration: none;
+}
+
+#AboutMeBar{
+    position: fixed;
+    right: 10%;
+    bottom: 30%;
+}
+
+
+p.aboutme{
+    font-size: 15pt;
+}
+
+.glyphicon-phone-alt,
+.glyphicon-envelope {
+    font-size: 15pt;
+    color: rgb(175, 175, 175);
+}
+
+
+.contact{
+    font-size: 13pt;
+    font-family: "Garamond", sans-serif;
+}
+
+@media screen and (min-width: 1200px) {
+    #portrait{
+        width: 700px;
+    }
+    #AboutMeBar{
+        bottom: 35%;
+    }
+}
+
+@media screen and (max-width : 1000px){
+    #portrait{
+        width: 55%;
+    }
+    
+}
+
+@media screen and (max-width : 750px){
+    #intro{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width : 800px){
+    #aboutMe-header{
+        height: 100px;
+    }
+    
+}
+
+/******************* Project Page ********************/
+
+#filterbar{
+    font-size: 15pt;
+    font-family: "Julius Sans One", sans-serif;
+}
+
+
+.detail{
+    bottom: 0%;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    left:0%;
+    right:0%;
+    opacity: 0.95;
+}
+
+.detail:hover{
+    opacity: 1;
+}
+
+.banner{
+    opacity: 0.97;
+    background-color: white;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 2%; 
+}
+
+.banner:hover{
+    opacity: 1;
+}
+
+.description{
+    color: grey;
+    margin-right: 10%;
+    padding-bottom: 2%;
+    
+}
+
+.modal-dialog{
+    width: 95%;
+    height: 95%;
+}
+
+modal-content {
+  height: auto;
+  min-height: 80%;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+#m1{
+    background-image: url("Images/Projects/proxy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+.title{
+}
+
+.title.alt{
+    color: #d6c897;
+    text-align: left;
+}
+
+.title.detailView{
+    color: black;
+    text-align: right;
+    padding-right: 7%;
+}
+
+.bg{
+    width: 100%;
+}
+
+.project-item{
+    box-shadow: 5px 5px 5px rgba(125, 125, 125, 0.5);
+    margin-bottom: 50px;
+    width: 70%;
+    height: 370px;
+    opacity: 0.5;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project-item:hover{
+    opacity: 1;
+}
+
+
+button.project-item{
+    border: none;
+    /* position: inherit; */
+    margin:auto;
+    display:block;
+}
+button.btn-viewmore{
+    border: none;
+    background-color: none;
+}
+.more{
+    transform: translate(-30%, 50%);
+    float: right;
+}
+
+.viewmore-icon{
+    font-size: 22pt;  
+    color: white;
+    align-content: right;
+}
+.viewmore-icon:hover{
+    color: gray;
+}
+
+.filter-icon{
+    font-size: 22pt;
+}
+
+.btn-extra{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+.btn-border{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px; 
+    border: lightgray 1px solid;
+}
+
+.btn-white{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border: none;
+}
+
+.content {
+    background-color: rgba(255,255,255, 0.5);
+    margin-top: 3%;
+    padding-top: 0px;
+    top: 0%;
+    margin-left: 9%;
+    width: 30%;
+    top: 0%;
+    border-radius: 5px;
+}
+
+.content:hover{
+    background-color: rgba(255,255,255, 0.9);
+}
+
+.content-alt{
+    background-color: rgba(230, 230, 230, 0.5);
+}
+
+.content-alt:hover{ 
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+h1.project-title{
+    font-size: 35pt;
+    padding-top: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 3%;
+    font-family: "Cormorant Garamond", sans-serif;
+    
+}
+
+h1.project-small{
+    font-size: 25pt;
+}
+
+p.project-description{
+    padding-left: 7%;
+    padding-right: 7%;
+    
+}
+
+.arrow-right{
+    right: 0;
+    float: right;
+    bottom: 15%;
+    position: inherit;
+}
+
+.arrow-left{
+    left: 0;
+    bottom: 15%;
+    float: left;
+    z-index:inherit;
+    position: inherit;
+}
+
+#filtericon{
+    font-size: 20pt;
+    color: rgb(175, 175, 175);
+}
+
+#ViewMore{
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding-bottom: 30px;
+    background-color: white;
+    color: gray;
+    border: none;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 17pt;
+}
+#ViewMore:hover{
+    background-color: rgba(168, 187, 194, 0.85);
+    color: white;
+}
+#ViewMore:pressed,
+#ViewMore:active,
+#ViewMore:focus{
+    border:none;
+}
+
+
+/* modal */
+.popup-detail{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+/* project items */
+#college-popup{
+    background-image: url("Images/Projects/proxy.png");
+}
+
+#harrypotter{
+  background-image: url("Images/Projects/harrypotter.png");
+}
+
+#harrypotter-popup{
+    
+}
+
+#simpleproxy{
+    background-image: url("Images/Projects/proxy-banner.png");
+}
+#proxy-content{
+    background-image: url("Images/Projects/proxy.png");
+}
+
+#foobar{
+    background-image: url("Images/Projects/foobar.png");
+}
+
+#foobar-popup{
+    
+}
+
+#ggplot{
+    background-image: url("Images/Projects/ggplot.png");
+}
+#ggplot-content{
+    
+}
+
+#rapt{
+    background-image: url("Images/Projects/rapt.png");
+}
+.rapt-content{
+    background-color: rgba(251, 203, 165, 0.4);
+}
+.rapt-content:hover{
+    background-color: rgba(251, 203, 165, 0.4);
+}
+#rapt-popup{
+    
+}
+
+#sara{
+    background-image: url("Images/Projects/sara.png");
+}
+#sara-popup{
+    
+}
+
+#shiny{
+  background-image: url("Images/Projects/shiny.png");
+  opacity: 1;
+}
+#shiny:hover{
+    /*border: 0.5px solid grey;*/
+    
+}
+
+#hack112{
+    background-image: url("Images/Projects/hack112.png");
+}
+
+#kickstarter{
+    background-image: url("Images/Projects/kickstarter.png");
+}
+#kickstarter-popup{
+    
+}
+
+#twins{
+    background-image: url("Images/Projects/twins-small.png");
+}
+#twins-content{
+    background-image: url("Images/Projects/twins-big.png");
+}
+
+#impactathon{
+    background-image: url("Images/Projects/impactathon.jpg");
+}
+
+#travelogue{
+    background-image: url("Images/Projects/travelogue.png");
+}
+#travelogue-content{
+    
+}
+
+#colloqium{
+    background-image: url("Images/Projects/duc.png");
+}
