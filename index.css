@@ -370,7 +370,7 @@ p.aboutme{
 }
 
 .banner{
-    opacity: 0.97;
+    opacity: 0.90;
     background-color: white;
     width: 100%;
     margin: 0px;
@@ -401,12 +401,6 @@ modal-content {
   overflow: hidden;
 }
 
-#m1{
-    background-image: url("Images/Projects/proxy.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 800px;
-}
 
 .title{
 }
@@ -583,26 +577,30 @@ p.project-description{
 .popup-detail{
     background-size: cover;
     background-repeat: no-repeat;
-    height: 700px;
+    height: 800px;
+}
+
+.modal-none{
+    height: auto;
 }
 
 /* project items */
 #college-popup{
-    background-image: url("Images/Projects/proxy.png");
+    background-image: url("Images/Projects/shiny-big.png");
 }
 
 #harrypotter{
-  background-image: url("Images/Projects/harrypotter.png");
+    background-image: url("Images/Projects/harrypotter.png");
 }
 
 #harrypotter-popup{
-    
+    background-image: url("Images/Projects/harrypotter-big.png");
 }
 
 #simpleproxy{
     background-image: url("Images/Projects/proxy-banner.png");
 }
-#proxy-content{
+#proxy-popup{
     background-image: url("Images/Projects/proxy.png");
 }
 
@@ -611,14 +609,14 @@ p.project-description{
 }
 
 #foobar-popup{
-    
+    background-image: url("Images/Projects/foobar-big.png");
 }
 
 #ggplot{
     background-image: url("Images/Projects/ggplot.png");
 }
-#ggplot-content{
-    
+#ggplot-popup{
+    background-image: url("Images/Projects/ggplot-big.png");
 }
 
 #rapt{
@@ -631,26 +629,25 @@ p.project-description{
     background-color: rgba(251, 203, 165, 0.4);
 }
 #rapt-popup{
-    
+    background-image: url("Images/Projects/rapt-big.jpg");
 }
 
 #sara{
     background-image: url("Images/Projects/sara.png");
 }
 #sara-popup{
-    
+    /* background-image: url("Images/Projects/sara-big.png"); */
 }
 
 #shiny{
   background-image: url("Images/Projects/shiny.png");
   opacity: 1;
 }
-#shiny:hover{
-    /*border: 0.5px solid grey;*/
-    
-}
 
 #hack112{
+    background-image: url("Images/Projects/hack112.png");
+}
+#hack112-popup{
     background-image: url("Images/Projects/hack112.png");
 }
 
@@ -658,25 +655,28 @@ p.project-description{
     background-image: url("Images/Projects/kickstarter.png");
 }
 #kickstarter-popup{
-    
+    background-image: url("Images/Projects/kickstarter-big.png");
 }
 
 #twins{
     background-image: url("Images/Projects/twins-small.png");
 }
-#twins-content{
+#twins-popup{
     background-image: url("Images/Projects/twins-big.png");
 }
 
 #impactathon{
     background-image: url("Images/Projects/impactathon.jpg");
 }
+#impactathon-popup{
+    background-image: url("Images/Projects/impactathon-big.jpg");
+}
 
 #travelogue{
     background-image: url("Images/Projects/travelogue.png");
 }
-#travelogue-content{
-    
+#travelogue-popup{
+    background-image: url("Images/Projects/travelogue-big.png");
 }
 
 #colloqium{

@@ -303,7 +303,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Go To Link</button>
+                        <button type="button" class="btn btn-secondary disabled" data-dismiss="modal">Go To Link</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
             </div>
@@ -329,7 +329,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Go To Link</button>
+                        <button type="button" class="btn btn-secondary disabled" data-dismiss="modal">Go To Link</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
             </div>
@@ -356,7 +356,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">More about GGPlot</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" Onclick = "redirectPage('https://ramnathv.github.io/pycon2014-r/visualize/ggplot2.html')">More about GGPlot</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
             </div>
@@ -370,19 +370,19 @@
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
                         </button>
                     
-                        <div class = "container-fluid" id = "m1">
+                        <div class = "container-fluid popup-detail" id = "m1">
                          <div class = "row banner">
                              <div class = "col-md-4">
-                                 <h1 class = "title detailView">Simple Proxy</h1>
+                                 <h1 class = "title detailView">Hack 112</h1>
                              </div>
                              <div class = "col-md-8">
-                                 <p class = "description">Intending to give students with minimal background in programming a taste of hackathons (yes, it's a big thing in computer science school!), we as teaching assistants organized a hackathon exclusively for students from the course 15-112 Fundamentals of Programming and Computer Science in Fall 2016. Here're details of the hackathon.. We are for sure rated as one of the five best CS courses in the United States for a reason.</p>
+                                 <p class = "description">Intending to give students with minimal background in programming a taste of hackathons (yes, it's a big thing in computer science school!), we as teaching assistants organized a hackathon exclusively for students from the course 15-112 Fundamentals of Programming and Computer Science in Fall 2016. <a ref = "http://www.hack112.com">Here're details of the hackathon.</a> We are for sure rated as <a href = "http://www.bloomberg.com/news/articles/2015-06-11/five-of-the-best-computer-science-classes-in-the-country">one of the five best CS courses in the United States</a> for a reason.</p>
                              </div>
                             </div>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Go To Link</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" Onclick = "redirectPage('http://www.hack112.com')">Go To Link</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
             </div>
@@ -391,7 +391,7 @@
     
     <div class="modal fade" id="RAPTPopUp" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content" id = "m2">
+                <div class="modal-content">
                     <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
                         </button>
@@ -418,12 +418,12 @@
     
     <div class="modal fade" id="SARAPopUp" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content" id = "m2">
+                <div class="modal-content">
                     <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
                         </button>
                     
-                        <div class = "container-fluid popup-detail" id = "sara-popup">
+                        <div class = "container-fluid popup-detail modal-none" id = "sara-popup">
                          <div class = "row banner">
                              <div class = "col-md-4">
                                  <h1 class = "title detailView">SARA</h1>
@@ -445,7 +445,7 @@
     
     <div class="modal fade" id="KickstarterPopUp" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
-                <div class="modal-content" id = "m2">
+                <div class="modal-content">
                     <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
                         </button>
@@ -468,31 +468,6 @@
         </div>
     </div>
     
-    <div class="modal fade" id="GGPlotPopUp" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content" id = "m2">
-                    <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
-                        </button>
-                    
-                        <div class = "container-fluid popup-detail" id = "ggplot-content">
-                         <div class = "row banner">
-                             <div class = "col-md-4">
-                                 <h1 class = "title detailView">Simple Proxy</h1>
-                             </div>
-                             <div class = "col-md-8">
-                                 <p class = "description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit tortor nec velit posuere molestie. Suspendisse ut ligula non urna fringilla tincidunt non quis diam. Praesent egestas at metus nec semper. Aenean laoreet tellus tortor, a interdum erat pellentesque non. Etiam sit amet urna sapien. Nullam convallis imperdiet finibus. Nulla sollicitudin convallis nunc, rutrum egestas sapien lobortis nec. Nulla lacus orci, porttitor ut consectetur feugiat, semper nec lectus. Proin dictum eleifend lorem, eu aliquet diam bibendum at. Phasellus quis ante ullamcorper, fringilla nulla nec, tincidunt ligula.</p>
-                             </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Go To Link</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-            </div>
-        </div>
-    </div>
     
     <div class="modal fade" id="ProxyPopUp" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -501,7 +476,7 @@
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
                         </button>
 
-                        <div class = "container-fluid popup-detail" id = "proxy-content">
+                        <div class = "container-fluid popup-detail" id = "proxy-popup">
                          <div class = "row banner">
                              <div class = "col-md-4">
                                  <h1 class = "title detailView">Simple Proxy</h1>
@@ -526,7 +501,7 @@
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
                         </button>
 
-                        <div class = "container-fluid popup-detail" id = "twins-content">
+                        <div class = "container-fluid popup-detail" id = "twins-popup">
                          <div class = "row banner">
                              <div class = "col-md-4">
                                  <h1 class = "title detailView">Twins Paradox</h1>
@@ -538,7 +513,33 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">View Video</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" Onclick = "redirectPage('https://www.youtube.com/watch?v=2I1X3EH-5lg')">View Video</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="ImpactathonPopUp" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+                        </button>
+
+                        <div class = "container-fluid popup-detail" id = "impactathon-popup">
+                         <div class = "row banner">
+                             <div class = "col-md-4">
+                                 <h1 class = "title detailView">Impact-a-thon</h1>
+                             </div>
+                             <div class = "col-md-8">
+                                 <p class = "description">During spring 2016, I participated a competition organized by Carnegie Mellon the college of engineering, aiming to implement positive impact in the society to foster acceptance of disabled children. The prompt of the Spring 2016 competition was to create an accessible playground for children with disabilities. We worked in a group of 5, with groupmates from disciplines all across Statistics, Electrical Engineering, and Mechanical Engineering. Our solution was to create tracks around playground that would allow children with difficulties to walk to be on a cart and enjoy the sensations that the playground facilities would bring.</p>
+                             </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" Onclick = "redirectPage('http://impact-a-thon-2015.weebly.com')">View Our Solution</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
             </div>
@@ -552,13 +553,14 @@
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
                         </button>
 
-                        <div class = "container-fluid popup-detail" id = "travelogue-content">
+                        <div class = "container-fluid popup-detail" id = "travelogue-popup">
                          <div class = "row banner">
                              <div class = "col-md-4">
                                  <h1 class = "title detailView">Travelogue</h1>
                              </div>
                              <div class = "col-md-8">
-                                 <p class = "description">This is a story that is not relevant to my professional pursue, but I like to tell nonetheless. During 2016 Summer, I travelled to 7 cities in the States and drew postcards to my friends on my journey. By the end when I was in Cambridge, MA, I made copies of these postcard and sold them on streets and to retail stores (including Black Ink and Bob Slate). At the end, I made approximately $900 of sales in 2 weeks. In case you're interested in what they look like, here're more details.</p>
+                                 <p class = "description">This is a story that is not relevant to my professional pursue, but I like to tell nonetheless. During 2016 Summer, I travelled to 7 cities in the States and drew postcards to my friends on my journey. By the end when I was in Cambridge, MA, I made copies of these postcard and sold them on streets and to retail stores (including <a href = "http://blackinkboston.squarespace.com/black-ink-cambridge/">Black Ink</a> and <a href = "http://www.bobslatestationer.com">Bob Slate</a>). At the end, I made approximately $900 of sales in 2 weeks. In case you're interested in what they look like, <a href = "https://www.facebook.com/tiffany.lee.1129/posts/10210222607504531">
+                                 here're</a> more details.</p>
                              </div>
                             </div>
                         </div>
@@ -577,7 +579,7 @@
                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
                         </button>
 
-                        <div class = "container-fluid popup-detail" id = "colloqium-content">
+                        <div class = "container-fluid popup-detail  modal-none" id = "colloqium-popup">
                          <div class = "row banner">
                              <div class = "col-md-4">
                                  <h1 class = "title detailView">Social Constructionism Research</h1>
