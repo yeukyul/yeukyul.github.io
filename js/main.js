@@ -255,5 +255,5 @@ $('#writingSampleOption').click(function(){
 
 $('#download').on("click", function(){
     if (onOption === 1) redirectPage('Images/Resume/YeukYuLee.pdf');
-    else (redirectPage('Images/Resume/writingSample.pdf'));
+    else (redirectPage('Images/Resume/WritingSample.pdf'));
 })
