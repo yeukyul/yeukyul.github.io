@@ -170,7 +170,7 @@ var aboutDescription = '<p>I am a Junior in Carnegie Mellon University, <br>majo
 
 var skillsDescription = '<p><strong>Programming languages:</strong> C, R, Python, HTML, CSS, Javascript, PHP, Java</p><p><strong>Statistics:</strong> Modeling, Prediction, Multivariate regression, Hierarchical Clustering, Visualization</p><p><strong>General:</strong> Adobe Photoshop, Illustrator, Microsoft Office, R Studio, Git, Origami Studio, D3.js</p>';
 
-var contactMeDescription = '<div id = "contactInfo"><br><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span><div class = "contact">+1 (646) 321-3377</div><br><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><div class = "contact">lyeukyu@gmail.com</div></div>';
+var contactMeDescription = '<div id = "contactInfo"><br><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span><div class = "contact">+1 (646) 321-3377</div><br><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><div class = "contact">lyeukyu@gmail.com</div><br></div>';
 
 $('#about').on('click', function(){
     $('#aboutMe-header').fadeOut(500, function(){

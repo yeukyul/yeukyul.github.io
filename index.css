@@ -3,7 +3,7 @@
 
 /* fonts */
 p{
-    font-family: "Garamond", sans-serif;
+    font-family: Garamond, sans-serif;
     font-size: 13pt;
 }
 
@@ -295,11 +295,6 @@ a.pagetab-item:active {
   text-decoration: none;
 }
 
-#AboutMeBar{
-    position: fixed;
-    right: 10%;
-    bottom: 30%;
-}
 
 
 p.aboutme{
