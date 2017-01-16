@@ -12,7 +12,13 @@ function get_context(){
 */
 function create_image(x, y, img){
     var context = get_context();
-    context.drawImage(img, x, y);
+    var zindex = 0.3;
+    /* anchor at center */
+    context.drawImage(img, 
+                      x - img.width * zindex/2, 
+                      y - img.height* zindex/2,
+                      img.width * zindex,
+                      img.height * zindex);
 }
 
 /*  
@@ -36,9 +42,13 @@ function create_rect(x, y, width, height){
 function create_line(x1, y1, x2, y2, width, color){
     context = get_context();
     context.beginPath();
+    
     context.moveTo(x1, y1);
     context.lineTo(x2, y2);
+    context.lineWidth = width;
+    context.strokeStyle = color;
     context.stroke();
+    
     context.closePath();
 }
 
@@ -98,7 +108,7 @@ function create_polygon(points, fill){
     context.beginPath();
     context.moveTo(x, y);
     
-    for(i = 1; i < points.length; i++){
+    for(i = 0; i < points.length; i++){
         point = points[i];
         x = point[0]; y = point[1];
         context.lineTo(x, y);

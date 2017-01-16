@@ -1,18 +1,20 @@
 /* translated from map.py */
 
 /* Sample class */
+/*
 function Apple (type) {
     this.type = type;
     this.color = "red";
     this.getInfo = getAppleInfo;
 }
+*/
 
 var width = 1500;
 var height = 1000;
 
 /*
  *#################################################
- * initialize 
+ * Class Initialization
  *#################################################
  */
 
@@ -38,12 +40,8 @@ function initcolorSet(){
                      background: color5, water: color6};
 }
 
-function echo(object){
-    return object.vpx;
-}
-
 /* class declaration */
-function gameMap(type){
+function gameMap(type, eyeCoord){
     
     /* variable initilization */
     mapInit();
@@ -58,8 +56,10 @@ function gameMap(type){
     this.speed = 400; // the change speed
     this.initcolorSet = initcolorSet;
     
+    if (eyeCoord == undefined) this.eyeCoord = [4200,-1116,-9156];
+    else (this.eyeCoord = eyeCoord);
+    
     /* testing purpose */
-    this.echo = echo;
     // this.randomGetPosition(); // !!!!! Function not written
     
     /* Class methods */
@@ -68,6 +68,7 @@ function gameMap(type){
     this.get3dPointCoord = get3dPointCoord;
     this.getCellScreenPos = getCellScreenPos;
     this.checkWithin = checkWithin;
+    /*
     this.drawTrees = drawTrees;
     this.drawGrayWalls = drawGrayWalls;
     this.drawGrayStoneWalls = drawGrayStoneWalls;
@@ -75,7 +76,7 @@ function gameMap(type){
     this.drawWalls = drawWalls;
     this.drawTrainDoors = drawTrainDoors;
     this.drawTrainWindows = drawTrainWindows;
-    
+    */
 }
 
 
@@ -103,41 +104,41 @@ function getCellCoord(row, col){
  */
 function get3dCellCoord(row, col, level){
     var points  =[];
-    points.push([col*self.cellWidth,-level*self.cellHeight,-row*self.cellDepth]);
-    points.push([(col+1)*self.cellWidth,-level*self.cellHeight,-row*self.cellDepth]);
-    points.push([col*self.cellWidth,-level*self.cellHeight,-(row+1)*self.cellDepth]);
-    points.push([(col+1)*self.cellWidth,-level*self.cellHeight,-(row+1)*self.cellDepth]);
-    points.push([col*self.cellWidth,-(level+1)*self.cellHeight,-row*self.cellDepth]);
-    points.push([(col+1)*self.cellWidth,-(level+1)*self.cellHeight,-row*self.cellDepth]);
-    points.push([col*self.cellWidth,-(level+1)*self.cellHeight,-(row+1)*self.cellDepth]);
-    points.push([(col+1)*self.cellWidth,-(level+1)*self.cellHeight,-(row+1)*self.cellDepth]);
+    points.push([col*this.cellWidth,-level*this.cellHeight,-row*this.cellDepth]);
+    points.push([(col+1)*this.cellWidth,-level*this.cellHeight,-row*this.cellDepth]);
+    points.push([col*this.cellWidth,-level*this.cellHeight,-(row+1)*this.cellDepth]);
+    points.push([(col+1)*this.cellWidth,-level*this.cellHeight,-(row+1)*this.cellDepth]);
+    points.push([col*this.cellWidth,-(level+1)*this.cellHeight,-row*this.cellDepth]);
+    points.push([(col+1)*this.cellWidth,-(level+1)*this.cellHeight,-row*this.cellDepth]);
+    points.push([col*this.cellWidth,-(level+1)*this.cellHeight,-(row+1)*this.cellDepth]);
+    points.push([(col+1)*this.cellWidth,-(level+1)*this.cellHeight,-(row+1)*this.cellDepth]);
     return points;
 }
 
 /*
- * get3dPointCoord: return coordinate of  single point
+ * get3dPointCoord: return coordinate of single point
  */
 function get3dPointCoord(row, col, level){
-    return [[col*self.cellWidth,-startlevel*self.cellHeight,-row*self.cellDepth]];
+    return [[col*this.cellWidth,-level*this.cellHeight,-row*this.cellDepth]];
 };
 
 /*
  * getCellScreenPos: get the position of a point on the screen
 */
 function getCellScreenPos(coords){
-    var thisCoord, x, y, z;
+    var thisCoord, x, y, z, f;
     var screenPos = [];
     for (i = 0; i < coords.length; i++){
         thisCoord = coords[i];
-        x = coords[0]; y = coords[1]; z = coords[2];
+        x = thisCoord[0]; y = thisCoord[1]; z = thisCoord[2];
         x -= this.eyeCoord[0];
         y -= this.eyeCoord[1];
         z -= this.eyeCoord[2];
-        f -= (this.height - this.vpy) / z;
+        f = (this.height - this.vpy) / z;
         x = x*f; y = y*f;
         screenPos.push([this.vpx + Math.round(x), this.vpy + Math.round(y)]);
     }
-    return screenPos;
+    return screenPos
 };
 
 /*

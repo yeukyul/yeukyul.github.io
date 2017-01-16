@@ -122,3 +122,8 @@
     margin: 0px;
     padding: 0px;
 }
+
+.hp{
+    transform: translate(-100%, -50%;);
+    width: 400px;
+}
