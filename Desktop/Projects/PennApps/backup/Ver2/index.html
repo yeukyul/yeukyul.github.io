@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+   <title>drawd.io</title>
+
+   <!-- Script: Jquery, AwwApp -->
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+   <script src="https://awwapp.com/static/widget/js/aww.min.js"></script>
+   <!-- Google Font: Poiret One -->
+   <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+   <!-- Stylesheet -->
+   <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <!-- Music Title and Artist -->
+    <div id="songDetail">
+        <h4 class="artist" id="song-artist">Coldplay</h4>
+        <h2 class="title" id="song-title">Cementries of London</h2>
+        <div class="row">
+            <img class="music-btn" id="prev" src="image/buttons/prev.png">
+            <img class="music-btn" id="play" src="image/buttons/play.png">
+            <img class="music-btn" id="next" src="image/buttons/next.png">
+        </div>
+    </div>
+    
+   <!-- rolling vinyl -->
+   <img src="image/disc_word.png" class="discAnimate" id="disc">
+
+   <!-- canvas -->
+   <div id="cover">
+        <div style="width:570px; height:500px;" id="aww-wrapper"></div>
+   </div>
+
+   <!-- initial project description banner -->
+   <div id="introbar" class="textbar">
+       <div id="bartext" class="center-description">
+           <img class="imageClass" id="logo" src="image/logo.png">
+           <p class="description" id="project-description">
+               A music explorer that lets you upload or draw your image, and find albums with similar artwork. Find your mood music visually.
+            </p>
+           <button class="buttonClass" id="draw-btn" onClick="showCanvas()">
+               <span class="btn-label">Draw</span>
+            </button>
+        </div>
+   </div>
+
+    <!-- Description Text -->
+    <div id="helptext" class="textbar">
+        <div class="center-description">
+            <h3 class="help-header">
+                Draw an album<br>
+                <div style="text-align:right;margin-right:10px;">or try these...</div>
+            </h3>
+           <br><br>
+            <div style="text-align:center;">
+                <!-- Recommended Album Arts -->
+                <img class="recommendedArt" src="image/x.jpg">
+                <img class="recommendedArt" src="image/art_vivalavida.jpg">
+                <img class="recommendedArt" src="image/stickyfinger.jpg">
+                <img class="recommendedArt" src="image/hamilton.jpg">
+            </div>
+            <br><br>
+            <button id="go" class="right" onClick="saveBoard();lookForSong();showSongDetail()">
+                <span class="btn-label">Go</span>
+            </button>
+            
+        </div>
+    </div>
+
+    <!-- return button -->
+    <div class="returnButton" id="return-button"><img src="./image/returnButton.png"></div>
+
+   <footer>
+       Created by Sam, Satoru, Tiffany, David in PennApps XV.
+    </footer>
+
+
+   <!-- External Script: jQuery, local main.js -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="TweenMax.js"></script>
+   <script src="main.js"></script>
+   <script src="animation.js"></script>
+</body>
+</html>
