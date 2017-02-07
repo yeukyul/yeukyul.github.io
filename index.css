@@ -361,11 +361,13 @@ p.aboutme{
     width: 100%;
     left:0%;
     right:0%;
-    opacity: 0.95;
+    opacity: 1;
 }
 
 .detail:hover{
+    
     opacity: 1;
+    
 }
 
 .banner{
@@ -395,7 +397,7 @@ p.aboutme{
 
 modal-content {
   height: auto;
-  min-height: 80%;
+  min-height: 60%;
   border-radius: 0;
   overflow: hidden;
 }
@@ -424,7 +426,7 @@ modal-content {
     margin-bottom: 50px;
     width: 70%;
     height: 370px;
-    opacity: 0.5;
+    opacity: 0.93;
     background-size: cover;
     background-repeat: no-repeat;
 }
