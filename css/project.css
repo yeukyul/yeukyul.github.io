@@ -1,0 +1,136 @@
+figure {
+    display: inline;
+}
+
+.project-menu {
+    position: fixed;
+    overflow: auto;
+    width: 75%;
+    bottom: 0%;
+    left: 150%;
+    transform: translate(-50%, 0%);
+    height: 90%;
+    overflow-x: hidden;
+    top: 20%;
+    padding-bottom: 5%;
+}
+
+.project-big{
+    width: 100%;
+    margin-bottom: 3%;
+    color: transparent;
+}
+
+.project-sm {
+    width: 48%;
+}
+
+.project-right-big {
+    margin-top: 4%;
+    width: 100%;
+}
+
+.project-sm-left{
+    margin-right: 3%;
+}
+
+.project-big:hover,
+.project-sm:hover,
+.project-right-big:hover {
+    box-shadow: 10px 10px 10px rgba(125, 125, 125, 0.3);
+    opacity: 0.2;
+    color: gray;
+}
+
+.project-title {
+    color: transparent;
+}
+
+.project-title {
+    color: rgb(125, 125, 125);
+}
+
+.md-close {
+    width: 10%;
+    background-color: transparent;
+    border: none;
+}
+
+.cross{
+    width: 100%;
+}
+
+#simple-proxy {
+    top: 50%;
+    padding-left: 10%;
+    font-family: Consolas, sans-serif;
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+
+
+.typewrite {
+    font-family: Consolas, sans-serif;
+    color: white;
+}
+
+@media screen and (max-width : 1200px){
+    .project-sm {
+        width: 100%;
+        
+    }
+    
+    .project-sm-left{
+        margin-right: 0%;
+    }
+    
+    .project-big,
+    .project-sm,
+    .project-right-big {
+        margin-bottom: 3%;
+        margin-top: 3%;
+    }
+}
+
+div.project-brief {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+}
+
+.project-brief:hover {
+    
+}
+
+.imgWrap {
+  position: relative;
+  height: 200px;
+  width: 60%;
+}
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 10%;
+  color: rgb(80, 80, 80);
+  visibility: hidden;
+  opacity: 0;
+ 
+  -webkit-transition: visibility opacity 0.2s;
+
+}
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+
+h1.imgDescription {
+    
+}
+
