@@ -48,7 +48,7 @@ function animate() {
          $("#monwharf").attr("src", "images/3_alert.png");
     }
     else if (timer > 15 && timer%2 == 1) {
-         $("#monwharf").attr("src", "images/3_19.png");
+         $("#monwharf").attr("src", "images/3.png");
     }
     
 }
