@@ -46,6 +46,8 @@ img.project{
     left: 150%;
     top: 23%;
     width: 40%;
+    height: 60%;
+    overflow-y:scroll;
     position: fixed;
     font-size: 18pt;
     color: gray;
