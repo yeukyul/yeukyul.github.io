@@ -11,12 +11,13 @@ $(document).ready(function() {
 })
                   
 /* Swap background image after window is resized */
+
 function set_body_height() { 
     if ($(window).width() > 1300){
-        $("#headerbg").html('<img src = "Images/Home/header-large.png" class = "under" id = "headerimg">');
+        $("#headerbg").attr('src',  "Images/Home/header-large.png");
     }
     if ($(window).width() <= 1300){
-        $("#headerbg").html('<img src = "Images/Home/header-alt.png" class = "under" id = "headerimg">');
+        $("#headerbg").attr('src',  "Images/Home/header-alt.png");
     }
 };
 
