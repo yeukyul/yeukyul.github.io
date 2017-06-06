@@ -6,13 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Style Sheet -->
-  <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="css/project.css">
   <link rel="stylesheet" type="text/css" href="css/modal.css" />
   
-  <meta name="description" content="Nifty Modal Window Effects with CSS Transitions and Animations" />
-  <meta name="keywords" content="modal, window, overlay, modern, box, css transition, css animation, effect, 3d, perspective" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
   <meta name="author" content="Yeuk Yu Lee" />
   
   <!-- JQuery -->
@@ -23,63 +22,15 @@
   <title>Yeuk Yu Lee</title>
 </head>
 <body id="homepage">
-    
-    <!-- main screen -->
-    <div class = "row">
-        <div id = "headerbg">
-        <img src = "Images/Home/header-alt.png" class = "under hidden" id = "headerimg">
-        </div>
-        <div id = "logo">
-        <img src = "Images/Home/logo-01.png" id = "logoimg" class = "over hidden top">
-        </div>
-    </div>
-    
+
     <!-- page header -->
-    <div id="pagetitle"></div>
+    <div id="pagetitle">
+        <h1 class='page-title'>Yeuk Yu Lee</h1>
+        <p>Senior in Statistics and Computer Science.</p>
+    </div>
 
     <div id="page-bar">
          scroll down to view more
-    </div>
-
-    <!-- navigating buttons -->
-    <img id = "more" src = "Images/buttons/more.png">
-    <img id = "next" class="hidden" src = "Images/buttons/next.png">
-    <img id = "back" class="hidden" src = "Images/buttons/back.png">
-
-    <img src="Images/AboutMe/me.png" class = "" id="me">
-    <div id="aboutme-description">
-        I am a Junior in Carnegie Mellon University, <br>
-        majoring in <strong>Statistics</strong>
-        and minoring in 
-        <strong>Computer Science</strong>. <br>
-        <br>
-        I have a passion for <strong>software and web application development</strong>,
-        <strong>data visualization</strong>, and <strong>big data analysis</strong>. I have a keen eye for visual design and am bringing my knowledge of crafting into engineering and data analysis whenever possible.
-        
-        <br>
-        <br>
-        I code well, and I get really really excited for hackathons and
-        awesome ideas. 
-        Hit me up if
-        you have interesting projects that I can be involved with!
-        My email is <a>lyeukyu@gmail.com</a>
-        <br>
-        
-        <br>
-        <a title="my github page" href = "http://github.com/yeukyul">
-            <img src="Images/buttons/github.png" id="github-icon">
-        </a>
-        <a title="my resume" href="./Images/Resume/YeukYuLee.pdf">
-            <img src="Images/buttons/resume.png" id="resume-icon">
-        </a>
-        
-        <!-- unimplemented mail button -->
-        <!--
-        <a>
-            <img src="Images/buttons/mail.png" id="mail-icon">
-        </a>
-        -->
-        
     </div>
     
     <div class="project-menu">
@@ -158,183 +109,8 @@
         </div>
     </div>
     </div>
-    <div id="modal-background" class="full-page">
-    </div>
-    <div class="md-modal md-effect-12" id="collegeexplorer-modal">
-			<div class="md-content">
-				<h3>College Explorer</h3>
-				<div>
-					<p>>Data Visualization Web Application | Developed in R</p>
-					<ul>
-						<li><strong>Purpose:</strong>A data visualization application that visualizes top 800 colleges in the world, their rankings over time, their demographics, and geographic information. Our team's hope is that such application will be useful for students and parents who are applying for colleges to use it as a starting guide.</li>
-						<li><strong>Try it:</strong>  <a href="http://shiny.stat.cmu.edu:3838/sventura/36-315-Fall-2016/Group13/">link here</a> (It may take a while to load all the datasets)</li>
-					</ul>
-					<button class="md-close"><img class="cross" src="Images/buttons/cross.png"></button>
-				</div>
-			</div>
-		</div>
-    <div class="md-modal md-effect-12" id="fce-modal">
-			<div class="md-content">
-				<h3>Faculty Course Evaluation @ CMU</h3>
-				<div>
-					<p>Data Visualization Web Application | 
-                    Developed in R</p>
-					<ul>
-						<li><strong>Winner of the "Best Data Visualization Prize" by Qualtric in CMU TartanHacks</strong> 
-                            </li>
-						<li><strong>Purpose:</strong> to visualize more than 50 thousand entries of faculty course evaluation dataset Carnegie Mellon                University Offers, in hope of better facilitating students in course selection</li>
-                        <li><strong>Responsibility:</strong>Responsible for main engineering of the web app, wiring up back end and front end, data cleaning, UI design, fitting graphs</li>
-                        <li><strong>Devpost:</strong> 
-                        <a href="https://devpost.com/software/s-io">https://devpost.com/software/s-io</a></li>
-						<li><strong>Source Code:</strong> 
-                        <a href="http://github.com/yeukyul/fce_visualizer">http://github.com/yeukyul/fce_visualizer</a></li>
-					</ul>
-                    <br>
-					<button class="md-close"><img class="cross" src="Images/buttons/cross.png"></button>
-				</div>
-			</div>
-		</div>
-    
-    <div class="md-modal md-effect-12" id="drawdio-modal">
-			<div class="md-content">
-				<h3>Drawd.io</h3>
-				<div>
-					<p>Music Explorer Web Application with Computer Vision | Javascript</p>
-					<ul>
-						<li><strong>Developed in PennApps Spring 17</strong> 
-                            </li>
-						<li><strong>Purpose:</strong> By analyzing an album art that user uploads and draw, discover similar songs with similar album cover using Spotify API</li>
-                        <li><strong>Responsibility:</strong>Responsible for front-end engineering and UI design</li>
-                        <li><strong>Devpost:</strong> 
-                        <a href="https://devpost.com/software/drawdio">https://devpost.com/software/drawdio</a></li>
-						<li><strong>Source Code:</strong> 
-                        <a href="https://github.com/sl/drawdio">https://github.com/sl/drawdio</a></li>
-					</ul>
-					<button class="md-close"><img class="cross" src="Images/buttons/cross.png"></button>
-				</div>
-			</div>
-		</div>
-    
-    <div class="md-modal md-effect-12" id="ggplot-modal">
-			<div class="md-content">
-				<h3>Lindia: Linear Diagnostic Plot Graphing Package</h3>
-				<div>
-					<p>Statistical Graphing Package | Developed in R</p>
-					<ul>
-						<li>Graphing diagnostics plots for linear models is often a tedious work. To faciliate that process and make assumption checking easier for fellow Statistician, I developed an R package "lindia" (stands for linear diagnostics), under the supervision of CMU Statistics Professor Sam Ventura. This package allows Statisticians to diagnose how well a linear model fits a dataset in simply one line of code. The package is now in Beta testing phase.
-                            </li>
-						<li><strong>Mechanism:</strong>The package is built based on a an exisiting R graphing package <strong>GGPlot</strong>, developed by Hadley Wickham.</li>
-						<li><strong>View more on what it does and how to download:</strong> 
-                        <a href="https://github.com/yeukyul/lindia">https://github.com/yeukyul/lindia</a></li>
-					</ul>
-					<button class="md-close"><img class="cross" src="Images/buttons/cross.png"></button>
-				</div>
-			</div>
-		</div>
-    
-    <div class="md-modal md-effect-12" id="hp-modal">
-			<div class="md-content">
-				<h3>Harry Potter Mini Game</h3>
-				<div>
-					<p>Web Game | Javascript (Ongoing)</p>
-					<ul>
-						<li><strong>Purpose:</strong>A javascript based game that involves Harry Potter navigating in a 2.5D space world, in search of philosopher's stone. The game is uses 3-D calculus to calculate coordinate points of each object sitting in the game space.</li>
-                        <li>Still in development phase!</li>
-						<li><strong>Demo:</strong> <a href="https://yeukyul.github.io/harrypotter/index.html">It's not finished, but you can try it anyway!</a></li>
-					</ul>
-                    <img src="Images/Projects/hp-inmodal.png" style="width:100%">
-                    <br>
-					<button class="md-close"><img class="cross" src="Images/buttons/cross.png"></button>
-				</div>
-			</div>
-		</div>
-    
-    <div class="md-modal md-effect-12" id="sara-modal">
-			<div class="md-content">
-				<h3>SARA: Socially Awared Robot Assistant</h3>
-				<div>
-					<p>Research Lab Project | Embodied Virtual Agent developed in Java</p>
-					<ul>
-						<li><strong>Purpose:</strong> It was hypothesized by the field of Human Computer Interaction that virtual agent with social awareness is crucial in enhancing agent's task performance. SARA was then created in Articulab in Carnegie Mellon University to further study this relationship in depth. The lab is under supervision of Computer Science School Professor Justine Cassel. 
-
-						<li><strong>Responsibility:</strong> My responsbility on the team involved deriving learner model for tutoring system using machine learning, analyzing user study data, developing user study user-facing system, and co-writing paper in the field of Human Computer interaction.</li>
-						<li><strong>View more about SARA Project:</strong> <a href="http://articulab.hcii.cs.cmu.edu/projects/sara/">http://articulab.hcii.cs.cmu.edu/projects/sara/</a></li>
-					</ul>
-                    <img src="Images/Projects/sara-inmodal.png" style="width:100%">
-					<button class="md-close"><img class="cross" src="Images/buttons/cross.png"></button>
-				</div>
-			</div>
-		</div>
-    
-    <div class="md-modal md-effect-12" id="twins-modal">
-			<div class="md-content">
-				<h3>Twins Paradox</h3>
-				<div>
-					<p>Adventure Game | Developed in Python (pygame)</p>
-					<ul>
-						<li><strong>Purpose:</strong>A 2.5D space adventure game implemented in pygame module in python.</li>
-                        <li><strong>Story Behind:</strong> The story behind Twin's Paradox is based on the famous Physics Twins Paradox. It states that if one of the twins went travel around blackhole, when he comes back, he would find his brother on Earth aged much faster than he does. </li>
-                        <li>The game is centered around this idea, where player is trapped in outter space, trying to reach home before his brother dies.</li>
-						<img src="Images/Projects/twins-big.png" style="width:100%">
-					</ul>
-					<button class="md-close"><img class="cross" src="Images/buttons/cross.png"></button>
-				</div>
-			</div>
-		</div>
-    
-    <div class="md-modal md-effect-12" id="proxy-modal">
-			<div class="md-content">
-				<h3>Simple Proxy</h3>
-				<div>
-					<p>Proxy that forwards HTTP request | Developed in C</p>
-					<ul>
-						<li><strong>Purpose</strong> A simple iteractive, multi-threaded proxy that use to forward HTTP request from user to host specified.</li>
-					</ul>
-					<button class="md-close"><img class="cross" src="Images/buttons/cross.png"></button>
-				</div>
-			</div>
-		</div>
-    <div class="md-modal md-effect-12" id="artsy-modal">
-			<div class="md-content" style="width: 80%">
-				<h3>The Artsy Statistician</h3>
-				<div>
-					<p>Art Project that Based on Statistical Graphics and Application</p>
-					<ul>
-						<li><strong>Inspiration:</strong>Followed graph (in black and white), was an additive model I fitted for a statistics homework. Inspired by the shape of it, I created an illustration based on this regression (picture below). The idea then translated into a project that would take existing models and data points, and create artistic render for the data.</li>
-						<li><strong>How could it work:</strong> a 95 confidence level band can be computed by repeatedly resampling by cases or by residual, which would create belt of various shape around regreesion line. Points could be output as starts while rugs as trees.</li>
-						<li><strong>Status:</strong> The project is still in brain storming phase where I am still selecting appropriate framework to you. What is it good for, you ask. I don't know yet, but it would be a very bizarre data visualization, that I guarantee.</li>
-					</ul>
-                    <br>
-                    <img src="Images/Projects/graph.png" style="width:50%">
-                    <img src="Images/Projects/artsy.png" style="width:50%">
-                    <br>
-					<button class="md-close"><img class="cross" src="Images/buttons/cross.png"></button>
-				</div>
-			</div>
-		</div>
-    
-
-    <!-- classie.js by @desandro: https://github.com/desandro/classie -->
-    <script src="js/modal/classie.js"></script>
-    <script src="js/modal/modalEffects.js"></script>
-
-    <!-- for the blur effect -->
-    <!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
-    <script>
-        // this is important for IEs
-        var polyfilter_scriptpath = '/js/';
-    </script>
-    <script src="js/modal/cssParser.js"></script>
-    <script src="js/modal/css-filters-polyfill.js"></script>
-    
-    
-    <!-- footer -->
-    <div id="processbar"></div>
     
   <script src="js/mainpage.js"></script>
-  <script src="js/button.js"></script>
-  <script src="js/transition.js"></script>
-  <script src="js/TweenLite.min.js"></script>
     
 </body> 
 </html>
