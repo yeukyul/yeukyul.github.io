@@ -5,28 +5,144 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
-  <link rel="stylesheet" href="construction.css">
-  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Quattrocento|Vidaloka|Source+Serif+Pro" rel="stylesheet">
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" type="text/css" href="css/modal.css" />
+  
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="Yeuk Yu Lee" />
+  
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
   <title>Yeuk Yu Lee</title>
 </head>
-<body>
-        <div class = "fixed-size container centered hidden">
-            <h1 id = "name">Yeuk Yu Lee</h1>
-            <p id = "contentBar">
-                Sorry, I am currently updating the site. <br>
-                If you don't mind a buggy website, 
-            </p>
-            <a href="beta.html">Here is a link to the beta testing site.</a>
+<body id="homepage">
+
+    <!-- page header -->
+    <div id="pagetitle">
+        <h1 class='page-title'>Yeuk Yu Lee</h1>
+        <p>An Undergrad in Carnegie Mellon University.</p>
+        <!--
+        <div class="row">
+            <div class="col-sm-8">
+                
+            </div>
+             <div class="col-sm-4">
+                 Resume | About
+            </div>
         </div>
+        -->
+    </div>
+
+    <div id="page-bar">
+         scroll down to view more
+    </div>
     
-  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
-<script src="construction.js"></script>
-<script src="https://cdn.jsdelivr.net/holder/2.9.0/holder.min.js"></script>
-
-
+    <div class="project-menu">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 20rem;">
+                  <img class="card-img-top img-responsive" src="Images/Projects/collegeexplorer.png" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+                  <div class="card-block">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+                </div>
+        </div>
+    </div>
+    <!--
+    <div class="row">
+        <div class="col-sm-6">
+            <span class="imgWrap">
+                <a class="md-trigger" data-modal="collegeexplorer-modal">
+                <img id="college-explorer" class="project-big" src="Images/Projects/collegeexplorer.png">
+                </a>
+                 <p class="imgDescription">College Explorer: <br>Data Visualization Web App developed in R. Visualizes ranking, demographic, and geographic information of a top ranked college. Dataset provided by Kaggle.com</p>
+            </span>
+            <span class="imgWrap">
+                <a class="md-trigger" data-modal="twins-modal">
+                    <img id = "twins" class="project-sm project-sm-left" src="Images/Projects/twins.png">
+                    <p class="imgDescription">Twins Paradox: <br>2.5D Space Adventure Game in Python </p>
+                </a>
+            </span>
+            <span class="imgWrap">
+                <a class="md-trigger" data-modal="hp-modal">
+                    <img id = "hp" class="project-sm" src="Images/Projects/hp.png">
+                </a>
+                <p class="imgDescription">Harry Potter: <br>Javascript based Harry Potter game.</p>
+            </span>
+            <div class="row"></div>
+            <span class="imgWrap">
+                <a class="md-trigger" data-modal="proxy-modal">
+                    <div class="project-right-big" id="simple-proxy">
+                        <br>
+                        $ Simple Proxy
+                    <br>
+                    <a href="" class="typewrite" data-period="2000" 
+                     data-type='[ 
+                                "curl ipecho.net/plain; echo",
+                                "GET /hub/index.html HTTP/1.0",
+                                "./proxy 8889"
+                                ]'>
+                    <span class="wrap"></span>
+                    </a>
+                    <br>
+                    </div>
+                    <p class="imgDescription">Simply proxy that forwards HTTP request to server</p>
+                </a>
+            </span>
+            <span class="imgWrap">
+                <a class="md-trigger" data-modal="artsy-modal">
+                    <img id="artsystats" class="project-right-big" src="Images/Projects/artsy.png">
+                </a>
+                <p class="imgDescription">The Artsy Statistician: <br>An Artistic Statstical Graphing Output Style</p>
+            </span>
+        </div>
+        <div class="col-sm-6">
+            <span class="imgWrap">
+                <a class="md-trigger" data-modal="fce-modal">
+                    <img id = "fce" class="project-sm project-sm-left" src="Images/Projects/fce.png">
+                </a>
+                <p class="imgDescription">FCE Visualizer: <br>Data Visualization Web App of Faculty Course Evaluation</p>
+            </span>
+            <span class="imgWrap">
+                <a class="md-trigger" data-modal="drawdio-modal">
+                    <img id = "drawdio" class="project-sm" src="Images/Projects/drawdio.png">
+                </a>
+                <p class="imgDescription">Drawd.io: <br>Web Application that allows album art searching</p>
+            </span>
+            <span class="imgWrap">
+                <a class="md-trigger" data-modal="ggplot-modal">
+                    <img id="ggplot" class="project-right-big" src="Images/Projects/ggplot.png">
+                </a>
+                <p class="imgDescription">Lindia: <br>R graphing package</p>
+            </span>
+            <span class="imgWrap">
+                <a class="md-trigger" data-modal="sara-modal">
+                    <img id="sara" class="project-right-big" src="Images/Projects/sara.png">
+                </a>
+                <p class="imgDescription">SARA: <br>Embedded Virtual Agent developed in Java</p>
+            </span>
+        </div>
+    </div>
+    -->
+    
+  <script src="js/mainpage.js"></script>
+    
 </body> 
 </html>
+
