@@ -1,3 +1,18 @@
-img.project-menu {
+
+/* This stylsheet is for the styling of project cards */
+.card-img-top {
     width: 100%;
 }
+
+.card-block {
+   left: 50%;
+}
+
+.card-title {
+    font-size: 14pt;
+}
+
+.card-text {
+    font-size: 11pt;
+}
+
