@@ -6,10 +6,11 @@
 
 .card-block {
    left: 50%;
+    align-content: center;
 }
 
 .card-title {
-    font-size: 14pt;
+    font-size: 16pt;
 }
 
 .card-text {
