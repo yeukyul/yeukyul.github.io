@@ -20,3 +20,9 @@
 .card {
     border: none;
 }
+
+.card:hover {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 20px #c4a29e;
+}
