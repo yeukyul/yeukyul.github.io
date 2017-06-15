@@ -38,3 +38,6 @@ h1.page-title {
     padding: 10px;
 }
 
+a.card-url {
+    text-decoration: none;
+}
