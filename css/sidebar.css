@@ -1,0 +1,103 @@
+/*
+$color1: #00c0af;
+$color2: #00b0f6;
+$color3: #619cff;
+$color4: #b983ff;
+$color5: #BACCE9;
+$color6: #D4D0D8;
+$color7: #B9898D;
+
+*/
+.left-menu {
+  visibility: hidden; }
+
+.sliding-menu {
+  visibility: hidden;
+  position: fixed;
+  overflow: hidden; }
+
+.flex-center-wrapper {
+  display: flex;
+  display: -webkit-flex;
+  align-content: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  text-align: center; }
+
+.left-menu, .right-menu {
+  width: 300px; }
+
+element.style {
+  position: fixed;
+  visibility: visible;
+  transition: -webkit-transform 0.5s cubic-bezier(0.54, 0.01, 0.57, 1.03);
+  transform: translateX(-300px);
+  height: 679px;
+  top: 0px;
+  right: -300px; }
+
+.sliding-menu {
+  font-family: 'Press Start 2P', cursive;
+  /* W3C */
+  background: linear-gradient(top, #d3d3d3 0%, #ccb9ce 16%, #9e96b9 32%, #868bab 50%, #6a869f 66%, #f8eefc 82%, #6a869f 100%);
+  /* Firefox */
+  background: -moz-linear-gradient(top, #d3d3d3 0%, #ccb9ce 16%, #9e96b9 32%, #868bab 50%, #6a869f 66%, #f8eefc 82%, #6a869f 100%);
+  /* Chrome,Safari4+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d3d3d3), color-stop(16%, #ccb9ce), color-stop(32%, #9e96b9), color-stop(50%, #868bab), color-stop(66%, #6a869f), color-stop(82%, #f8eefc), color-stop(100%, #6a869f));
+  /* Chrome10+,Safari5.1+ */
+  background: -webkit-linear-gradient(top, #d3d3d3 0%, #ccb9ce 16%, #9e96b9 32%, #868bab 50%, #6a869f 66%, #f8eefc 82%, #6a869f 100%);
+  background-size: 1000%;
+  -moz-background-size: 1000%;
+  -webkit-background-size: 1000%;
+  /* W3C */
+  animation-name: fun-time-awesome;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+  /* Firefox: */
+  -moz-animation-name: fun-time-awesome;
+  -moz-animation-duration: 40s;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: alternate;
+  -moz-animation-play-state: running;
+  /* Chrome, Safari */
+  -webkit-animation-name: fun-time-awesome;
+  -webkit-animation-duration: 40s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running; }
+
+/* W3C */
+@keyframes fun-time-awesome {
+  0% {
+    background-position: left top; }
+  100% {
+    background-position: left bottom; } }
+/* Firefox */
+@-moz-keyframes fun-time-awesome {
+  0% {
+    background-position: left top; }
+  100% {
+    background-position: left bottom; } }
+/* Chrome, Safari */
+@-webkit-keyframes fun-time-awesome {
+  0% {
+    background-position: left top; }
+  100% {
+    background-position: left bottom; } }
+li {
+  list-style-type: none; }
+
+a.nav-item {
+  font-family: monospace;
+  padding: 10px;
+  color: white; }
+
+/*# sourceMappingURL=sidebar.css.map */
