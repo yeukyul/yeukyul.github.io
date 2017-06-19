@@ -27,28 +27,27 @@ $color7: #B9898D;
   -webkit-justify-content: center;
   text-align: center; }
 
-.left-menu, .right-menu {
+.left-menu {
   width: 300px; }
 
 element.style {
   position: fixed;
   visibility: visible;
-  transition: -webkit-transform 0.5s cubic-bezier(0.54, 0.01, 0.57, 1.03);
+  transition: -webkit-transform 0.01s cubic-bezier(0.54, 0.01, 0.57, 1.03);
   transform: translateX(-300px);
   height: 679px;
   top: 0px;
   right: -300px; }
 
 .sliding-menu {
-  font-family: 'Press Start 2P', cursive;
   /* W3C */
-  background: linear-gradient(top, #d3d3d3 0%, #ccb9ce 16%, #9e96b9 32%, #868bab 50%, #6a869f 66%, #f8eefc 82%, #6a869f 100%);
+  background: linear-gradient(top, #d3d3d3 0%, #868bab 16%, #6a869f 32%, #ccb9ce 50%, #9e96b9 66%, #f8eefc 82%, #6a869f 100%);
   /* Firefox */
-  background: -moz-linear-gradient(top, #d3d3d3 0%, #ccb9ce 16%, #9e96b9 32%, #868bab 50%, #6a869f 66%, #f8eefc 82%, #6a869f 100%);
+  background: -moz-linear-gradient(top, #d3d3d3 0%, #868bab 16%, #6a869f 32%, #ccb9ce 50%, #9e96b9 66%, #f8eefc 82%, #6a869f 100%);
   /* Chrome,Safari4+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d3d3d3), color-stop(16%, #ccb9ce), color-stop(32%, #9e96b9), color-stop(50%, #868bab), color-stop(66%, #6a869f), color-stop(82%, #f8eefc), color-stop(100%, #6a869f));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d3d3d3), color-stop(16%, #868bab), color-stop(32%, #6a869f), color-stop(50%, #ccb9ce), color-stop(66%, #9e96b9), color-stop(82%, #f8eefc), color-stop(100%, #6a869f));
   /* Chrome10+,Safari5.1+ */
-  background: -webkit-linear-gradient(top, #d3d3d3 0%, #ccb9ce 16%, #9e96b9 32%, #868bab 50%, #6a869f 66%, #f8eefc 82%, #6a869f 100%);
+  background: -webkit-linear-gradient(top, #d3d3d3 0%, #868bab 16%, #6a869f 32%, #ccb9ce 50%, #9e96b9 66%, #f8eefc 82%, #6a869f 100%);
   background-size: 1000%;
   -moz-background-size: 1000%;
   -webkit-background-size: 1000%;
@@ -93,11 +92,11 @@ element.style {
   100% {
     background-position: left bottom; } }
 li {
-  list-style-type: none; }
+  list-style-type: none;
+  margin: 20px 0px 20px 0px; }
 
 a.nav-item {
-  font-family: monospace;
-  padding: 10px;
+  font-family: "Josefin Sans", sans-serif;
   color: white; }
 
 /*# sourceMappingURL=sidebar.css.map */

@@ -1,9 +1,11 @@
+/* This stylesheet is responsible for styling of project list panel */
+
 figure {
     display: inline;
 }
 
 .project-menu {
-    overflow: auto;
+    overflow: scroll;
     margin-top: 5%;
 }
 
@@ -89,6 +91,7 @@ div.project-brief {
   -webkit-transition: visibility opacity 0.2s;
 
 }
+
 .imgWrap:hover .imgDescription {
   visibility: visible;
   opacity: 1;

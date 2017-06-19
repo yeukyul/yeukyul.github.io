@@ -9,12 +9,13 @@ $color7: #B9898D;
 
 */
 
-$color6: #f8eefc;
-$color2: #ccb9ce;
-$color3: #9e96b9;
-$color4: #868bab;
-$color5: #6a869f;
+
 $color1: #d3d3d3;
+$color2: #868bab;
+$color3: #6a869f;
+$color4: #ccb9ce;
+$color5: #9e96b9;
+$color6: #f8eefc;
 $color7: #6a869f;
 
 
@@ -41,14 +42,14 @@ $color7: #6a869f;
 }
 
 .left-menu {
-    width: 400px;
+    width: 300px;
 }
 
 
 element.style {
     position: fixed;
     visibility: visible;
-    transition: -webkit-transform 0.5s cubic-bezier(0.54, 0.01, 0.57, 1.03);
+    transition: -webkit-transform 0.01s cubic-bezier(0.54, 0.01, 0.57, 1.03);
     transform: translateX(-300px);
     height: 679px;
     top: 0px;
@@ -56,7 +57,6 @@ element.style {
 }
 
 .sliding-menu {
-	font-family: 'Press Start 2P', cursive;
 
 	/* W3C */
 	background: linear-gradient(top, $color1 0%,$color2 16%,$color3 32%,$color4 50%,$color5 66%,$color6 82%,$color7 100%);
@@ -119,10 +119,10 @@ element.style {
 
 li {
     list-style-type: none;
+    margin: 20px 0px 20px 0px;
 }
 
 a.nav-item {
-    font-family: monospace;
-    padding: 10px;
+    font-family: "Julius Sans One", sans-serif;
     color: white;
 }
