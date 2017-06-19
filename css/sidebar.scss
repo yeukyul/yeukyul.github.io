@@ -42,7 +42,7 @@ $color7: #6a869f;
 }
 
 .left-menu {
-    width: 300px;
+    width: 350px;
 }
 
 
@@ -50,7 +50,6 @@ element.style {
     position: fixed;
     visibility: visible;
     transition: -webkit-transform 0.01s cubic-bezier(0.54, 0.01, 0.57, 1.03);
-    transform: translateX(-300px);
     height: 679px;
     top: 0px;
     right: -300px;
@@ -123,6 +122,6 @@ li {
 }
 
 a.nav-item {
-    font-family: "Julius Sans One", sans-serif;
+    font-family: Avenir, sans-serif;
     color: white;
 }

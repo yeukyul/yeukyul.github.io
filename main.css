@@ -28,12 +28,6 @@ h1.page-title {
     font-size: 40pt;
 }
 
-#pagetitle {
-    position: fixed;
-    left: 13%;
-    top: 10%;
-}
-
 .row {
     padding: 10px;
 }
@@ -41,4 +35,8 @@ h1.page-title {
 a.card-url {
     text-decoration: none;
     color: black;
+}
+
+.main-page-container {
+    padding: 7% 10% 0% 10%;
 }
