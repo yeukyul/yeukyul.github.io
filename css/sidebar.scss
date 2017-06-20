@@ -1,21 +1,10 @@
-/*
-$color1: #00c0af;
-$color2: #00b0f6;
-$color3: #619cff;
-$color4: #b983ff;
-$color5: #BACCE9;
-$color6: #D4D0D8;
-$color7: #B9898D;
-
-*/
-
-
+/* define color spectrum used in the sidebar */
 $color1: #d3d3d3;
 $color2: #868bab;
 $color3: #6a869f;
 $color4: #ccb9ce;
 $color5: #9e96b9;
-$color6: #f8eefc;
+$color6: #d3d3d3;
 $color7: #6a869f;
 
 
@@ -44,7 +33,6 @@ $color7: #6a869f;
 .left-menu {
     width: 350px;
 }
-
 
 element.style {
     position: fixed;
@@ -127,9 +115,22 @@ li {
 }
 
 a.nav-item {
-    font-family: 'Lato', sans-serif;
+    font-family: "Julius Sans One", sans-serif;
     color: white;
     font-weight: 100;
     letter-spacing: 2px;
-    font-size: 18px;
+    font-size: 14px;
+}
+
+#exit {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+#exit:hover {
+}
+
+.button-img {
+    width: 50px;
 }

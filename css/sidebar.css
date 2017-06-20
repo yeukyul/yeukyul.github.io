@@ -1,13 +1,4 @@
-/*
-$color1: #00c0af;
-$color2: #00b0f6;
-$color3: #619cff;
-$color4: #b983ff;
-$color5: #BACCE9;
-$color6: #D4D0D8;
-$color7: #B9898D;
-
-*/
+/* define color spectrum used in the sidebar */
 .left-menu {
   visibility: hidden; }
 
@@ -40,13 +31,13 @@ element.style {
 
 .sliding-menu {
   /* W3C */
-  background: linear-gradient(top, #d3d3d3 0%, #868bab 16%, #6a869f 32%, #ccb9ce 50%, #9e96b9 66%, #f8eefc 82%, #6a869f 100%);
+  background: linear-gradient(top, #d3d3d3 0%, #868bab 16%, #6a869f 32%, #ccb9ce 50%, #9e96b9 66%, #d3d3d3 82%, #6a869f 100%);
   /* Firefox */
-  background: -moz-linear-gradient(top, #d3d3d3 0%, #868bab 16%, #6a869f 32%, #ccb9ce 50%, #9e96b9 66%, #f8eefc 82%, #6a869f 100%);
+  background: -moz-linear-gradient(top, #d3d3d3 0%, #868bab 16%, #6a869f 32%, #ccb9ce 50%, #9e96b9 66%, #d3d3d3 82%, #6a869f 100%);
   /* Chrome,Safari4+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d3d3d3), color-stop(16%, #868bab), color-stop(32%, #6a869f), color-stop(50%, #ccb9ce), color-stop(66%, #9e96b9), color-stop(82%, #f8eefc), color-stop(100%, #6a869f));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d3d3d3), color-stop(16%, #868bab), color-stop(32%, #6a869f), color-stop(50%, #ccb9ce), color-stop(66%, #9e96b9), color-stop(82%, #d3d3d3), color-stop(100%, #6a869f));
   /* Chrome10+,Safari5.1+ */
-  background: -webkit-linear-gradient(top, #d3d3d3 0%, #868bab 16%, #6a869f 32%, #ccb9ce 50%, #9e96b9 66%, #f8eefc 82%, #6a869f 100%);
+  background: -webkit-linear-gradient(top, #d3d3d3 0%, #868bab 16%, #6a869f 32%, #ccb9ce 50%, #9e96b9 66%, #d3d3d3 82%, #6a869f 100%);
   background-size: 1000%;
   -moz-background-size: 1000%;
   -webkit-background-size: 1000%;
@@ -99,10 +90,18 @@ li {
   margin: 20px 0px 20px 0px; }
 
 a.nav-item {
-  font-family: 'Lato', sans-serif;
+  font-family: "Julius Sans One", sans-serif;
   color: white;
   font-weight: 100;
   letter-spacing: 2px;
-  font-size: 18px; }
+  font-size: 14px; }
+
+#exit {
+  position: absolute;
+  right: 0%;
+  top: 0%; }
+
+.button-img {
+  width: 50px; }
 
 /*# sourceMappingURL=sidebar.css.map */
