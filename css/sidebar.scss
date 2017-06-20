@@ -122,15 +122,15 @@ a.nav-item {
     font-size: 14px;
 }
 
-#exit {
-    position: absolute;
-    right: 0%;
-    top: 0%;
+button.btn-secondary.slider-exit {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+button.btn-secondary.slider-exit:hover {
+    background-color: grey;
 }
 
-#exit:hover {
-}
-
-.button-img {
-    width: 50px;
+.btn-label {
+    color: white;
 }
