@@ -43,21 +43,21 @@ element.style {
   -webkit-background-size: 1000%;
   /* W3C */
   animation-name: fun-time-awesome;
-  animation-duration: 40s;
+  animation-duration: 100s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-play-state: running;
   /* Firefox: */
   -moz-animation-name: fun-time-awesome;
-  -moz-animation-duration: 40s;
+  -moz-animation-duration: 100s;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: infinite;
   -moz-animation-direction: alternate;
   -moz-animation-play-state: running;
   /* Chrome, Safari */
   -webkit-animation-name: fun-time-awesome;
-  -webkit-animation-duration: 40s;
+  -webkit-animation-duration: 100s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
@@ -94,17 +94,28 @@ a.nav-item {
   color: white;
   font-weight: 100;
   letter-spacing: 2px;
-  font-size: 14px; }
+  font-size: 16px; }
 
-button.btn-secondary.slider-exit {
+button.slider-exit {
   background-color: transparent;
   color: white;
-  border-color: white; }
+  font-size: 20pt; }
 
-button.btn-secondary.slider-exit:hover {
-  background-color: grey; }
+button.slider-exit:hover {
+  color: #494D66; }
 
 .btn-label {
   color: white; }
+
+.toggle-icon {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  float: right;
+  color: lightgrey;
+  font-size: 30pt; }
+
+.toggle-icon:hover {
+  color: #728AA3; }
 
 /*# sourceMappingURL=sidebar.css.map */

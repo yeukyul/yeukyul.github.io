@@ -1,0 +1,82 @@
+* {
+    font-family: Avenir, sans-serif;
+}
+
+.tooltip {
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:#728AA3;
+	border-radius:5px;
+	padding:10px;
+	color:#fff;
+	font-size:12px Arial;
+}
+
+/* relative position classes */
+.centered{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.center{
+    left : 50%;
+    text-align: center;
+
+}
+
+.hidden{
+    display: none;
+}
+
+
+h1.page-title {
+    font-family: Avenir, sans-serif;
+    color: rgb(188, 188, 188);
+    font-size: 40pt;
+}
+
+.row {
+    padding: 10px;
+}
+
+a.card-url {
+    text-decoration: none;
+    color: black;
+}
+
+.main-page-container {
+    padding: 10% 15% 0% 15%;
+}
+
+.icon-container {
+    padding-top: 50px;
+}
+
+.profile-icon {
+    color: #151D3C;
+    margin: 10px;
+}
+
+.profile-icon:hover {
+    color: #fff;
+}
+
+
+.fa {
+    font-size: 20pt;
+}
+
+.top-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    background-color: transparent;
+}
+
+
+
