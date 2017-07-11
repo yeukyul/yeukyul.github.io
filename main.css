@@ -61,4 +61,7 @@ a.card-url {
   border: none;
   background-color: transparent; }
 
-/*# sourceMappingURL=main.css.map */
+.section-header-title {
+  font-size: 17pt;
+  color: #ccb9ce;
+}
