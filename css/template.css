@@ -1,0 +1,165 @@
+* {
+    font-family: Avenir, sans-serif;
+}
+
+.side-img-container {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    width: 40%;
+    top: 0%;
+    background-image: url('../Images/bg/leaves.jpeg');
+    z-index: -1;
+}
+
+.project-content-container {
+    position: fixed;
+    right: 0%;
+    width: 60%;
+    top: 0%;
+    height: 100%;
+    z-index: 1;
+    box-shadow: -7px 0px 10px #3f3f3f;
+    overflow-y: scroll;
+}
+
+.project-content {
+    margin: 80px;
+    margin-top: 25%;
+    text-align: left;
+}
+
+h1.project-header {
+    font-family: Futura, sans-serif;
+    color: #939393;
+    font-size: 40pt;
+    margin: 20px 0 20px 0;
+}
+
+h3.project-subheader {
+    font-family: Avenir, sans-serif;
+    font-weight: 100;
+    color: #6a869f;
+    font-size: 20pt;
+    margin: 10px 0 20px 0;
+}
+
+
+hr.section-break {
+    width: 10%;
+    position: relative;
+    left: 0;
+    margin: 50px 0 50px 0;
+}
+
+p.project-paragraph {
+    margin: 30px 0 30px 0;
+}
+
+/* Media Query: for mobile responsiveness */
+
+/* Responsiveness (portrait) ----------- */
+@media only screen 
+and (max-width : 400px) {
+    .project-content {
+        margin: 30px;
+    }
+    .side-img-container {
+        position: static;
+        height: 100px;
+        width: 100%;
+    }
+    h1.project-header {
+        font-size: 30pt;
+    }
+    h3.project-subheader {
+        font-size: 14pt;
+    }
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+    /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 800px) {
+     .side-img-container {
+        position: static;
+         height: 300px;
+         width: 100%;
+    }
+    .project-content-container {
+        position: static;
+        height: auto;
+        overflow: auto;
+        width: 100%;
+    }
+    .project-content {
+        margin-top: 75px;
+    }
+    hr.section-break {
+        margin : 20px 0 20px 0;
+    }
+}
+
+@media only screen 
+and (max-width : 400px) {
+     .side-img-container {
+         height: 150px;
+    }
+    .project-content {
+        margin-top: 50px;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+    /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+    /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+    /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+    /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+    /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    /* Styles */
+}
