@@ -8,41 +8,27 @@ hr.section-break {
   margin: 50px 0 50px 0; }
 
 .page-container {
-  margin: 120px 120px 0px 120px; }
-
-h1.page-header {
-  font-family: Futura, sans-serif;
-  color: #939393;
-  font-size: 40pt;
-  margin: 20px 0 20px 0; }
-
-h3.page-subheader {
-  font-family: Avenir, sans-serif;
-  font-weight: 100;
-  color: #6a869f;
-  font-size: 15pt;
-  margin: 10px 0 20px 0; }
-* {
-  font-family: Avenir, sans-serif; }
-
-hr.section-break {
-  width: 10%;
-  position: relative;
-  left: 0;
-  margin: 50px 0 50px 0; }
-
-.page-container {
   margin: 120px 140px 0px 140px; }
 
 h1.page-header {
   font-family: Futura, sans-serif;
-  color: #939393;
   font-size: 40pt;
   margin: 20px 0 20px 0; }
 
 h3.page-subheader {
   font-family: Avenir, sans-serif;
   font-weight: 100;
-  color: #6a869f;
   font-size: 15pt;
   margin: 10px 0 20px 0; }
+
+.light-grey-text {
+  color: #aaaaaa; }
+
+.grey-text {
+  color: #a3a3a3; }
+
+.stark-blue-text {
+  color: #6a869f; }
+
+.dark-grey-text {
+  color: #939393; }
