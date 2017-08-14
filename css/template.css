@@ -8,6 +8,7 @@
     z-index: -1;
 }
 
+
 .project-content-container {
     position: fixed;
     right: 0%;
@@ -160,3 +161,32 @@ only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
     /* Styles */
 }
+
+
+/* ---- Alternate Style */
+.top-img-container {
+    position: relative;
+    left: 0;
+    height: 200px;
+    width: 100%;
+    top: 0%;
+    background-image: url('../Images/bg/leaves.jpeg');
+    z-index: -1;
+}
+
+.project-content-center-container {
+    transform: translate(-50%, 0%);
+    position: relative;
+    width: 60%;
+    left: 50%;
+    top: 0%;
+    height: 100%;
+    z-index: 1;
+    overflow-y: scroll;
+}
+
+.project-content-alt {
+    margin-top: 100px;
+    text-align: left;
+}
+
