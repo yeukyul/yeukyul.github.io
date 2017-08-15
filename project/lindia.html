@@ -17,38 +17,56 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     
   <!-- Style Sheet -->
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="css/page.css">
-  <link rel="stylesheet" href="css/template.css">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../css/page.css">
+  <link rel="stylesheet" href="../css/template.css">
     
   <!-- Favicon -->
   <link rel="icon" 
       type="image/png" 
-      href="Images/Projects/favicon.png">
+      href="../Images/Projects/favicon.png">
 
   <title>Yeuk Yu Lee | Project </title>
     
 </head>
 <body>
-    <div class="side-img-container"></div>
-    <div class="project-content-container">
-        <div class="project-content">
+    <div class="project-content-center-container">
+        <div class="project-content-alt">
             <h1 class="page-header">
                 Lindia
             </h1>
             <h3 class="project-subheader">
-                R package: Automated Linear Diagnostics
+                Automated Linear Regression Diagnostics in R
             </h3>
             <hr class="section-break">
-            <p class="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut euismod justo, vulputate auctor nisl. Mauris vel malesuada urna, ac ultrices erat. Vivamus aliquam ultricies ex. Nullam dictum quam a nisl ultrices, vitae auctor eros dapibus. Sed sit amet congue ligula. Duis convallis, magna non ultricies congue, nisl metus auctor felis, sed rhoncus augue libero nec metus. Morbi lobortis neque vel diam porta facilisis. Donec a ligula ac quam convallis egestas in a urna. Cras sit amet consectetur mi. Donec malesuada risus non pellentesque tempus. Morbi vitae erat ultricies, facilisis mi sed, accumsan augue. Aliquam sagittis, enim ac varius hendrerit, felis ante volutpat metus, non tempus ex quam eu lorem. Donec sodales pharetra mi, sed eleifend sapien porttitor sed.</p>
+            <p class="project-paragraph">
+                <strong>Context: </strong> I am a frequent R user for data manipulation and analysis work. In modeling, one simple technique that I always use is linear regression. To assess how well the linear regression fits the model, I often time need to take a quick skim of the regression diagnostics plot. However, the current syntax in base-R graphics (plotting features that comes with R) has made it very tedious to generate such plots, not to mention that crucial graphic types are not included.</p>
+            
 
-            <p class="project-paragraph">Nulla vitae feugiat justo. Mauris ultricies, purus ut malesuada suscipit, eros enim blandit ante, sed varius augue tortor vitae urna. Ut ac ornare nunc. Sed blandit nisl nisi. Vestibulum eget sapien nec velit egestas scelerisque in in risus. Cras eu urna ex. Nulla vehicula metus et ante sodales, eget commodo metus tempor. In eu varius lacus, pulvinar porttitor urna. Sed porttitor justo at gravida tempor. Quisque placerat, nisi vel cursus imperdiet, erat turpis sodales odio, et efficitur metus tortor blandit est. Fusce mollis luctus felis, in consectetur magna luctus in. Aenean vel consequat libero. Maecenas nunc lorem, dapibus eget dui ac, vulputate tincidunt enim. Etiam congue mi quis felis maximus porta.</p>
+            <p class="project-paragraph">I wanted to create a package that would allow users to generate diagnostics plot in a simple comment, while being able to retain the merit of grammar of graphics. Therefore, Lindia (short for linear diagnostics) was built as an extension to ggplot2 to provide streamlined plotting features of linear model diagnostic plots.</p>
+            
+        
+            <p class="project-paragraph">The package allows the user to use one command to output most of the graphs to access fitness of the linear regression to the data (e.g. residual plot, quantile-quantile plot, Cook’s distance plot), and arrange them to output in grid style.</p>
+            
+            
+            <hr class="section-break">
+            <p class="project-paragraph">
+                <strong>Process: </strong> I was glad to have Statistics professor Sam Ventura to mentor this project. Writing package is quite different from any other experiences — we have to make sure that the package was robust enough to handle any malformed input, and that the output of the package does not differ much to users’ expectation.</p>
+            
+            <p class="project-paragraph">After the package was done developing, we started the first round of dog fooding in the CMU Statistics department. One thing that stroke us as unexpected was that we didn’t account for the size of the regression people would feed into the lindia. Initially when we’re building the package, we tested it with a regression with only about 5 predictor variables, and so all the diagnostics plot were able to fit in a 4 by 3 grid. However, practically speaking, linear regression is used by data scientists to fit many predictor variables at once to assess which could potentially be useful in modeling. Therefore the plots that were cramped into the grid quickly gotten out of hand.</p>
+            
+            <p class="project-paragraph">To remedy that problem, we added an additional feature that allowed user to specify the number of pages and plots per page in the output. That fixed the problem of diagnosting huge regression.</p>
+            
+            <hr class="section-break">
+            
+            <p class="project-paragraph">
+                <strong>Challenges:</strong> There were quite a few unforeseen business challenges. For the first round of printing, I didn’t have a specific plan for quantity of postcards. I made an arbitrary decision of printing 40 postcards for each type, and 20 drawings in total. Because, in the end, I didn’t really know how people would receive it.</p>
+            
+            <p class="project-paragraph">The package was submitted to the Comprehensive R Archive Network (CRAN) and was officially released as a package. We are hoping that lindia would be used in the Fall 17 semester in Advanced Data Analysis Course for hundreds of students to use.</p>
+            
+            <p class="project-paragraph">The technical details of this package are included in this <a href="http://github.com/yeukyul/lindia">readme on Github</a>.</p>
 
-            <p class="project-paragraph">Nunc tincidunt nisi ut ultricies tincidunt. Mauris risus eros, consequat vel mauris at, viverra dignissim sapien. Suspendisse porttitor, purus sed congue lacinia, magna dui porta metus, non vestibulum nisi massa in ipsum. Nam ac dui luctus, maximus orci sed, bibendum dolor. Donec luctus nisl quis nunc imperdiet luctus sit amet at arcu. Cras vel est quis tortor rutrum elementum. Nunc lacus massa, convallis at augue in, ullamcorper bibendum nibh. Suspendisse sed vestibulum eros. Aenean eget pretium diam. Vestibulum et nisl euismod, gravida mi nec, rutrum eros. Aenean vitae leo eu lacus ornare pellentesque. </p>
-
-            <p class="project-paragraph">Suspendisse lacinia sed quam in finibus. Mauris dignissim ultricies mauris eu pretium. Nam efficitur hendrerit varius. Vestibulum luctus fermentum euismod. Duis vitae condimentum lorem. Morbi a consectetur eros. Etiam nulla nulla, imperdiet sit amet velit ac, laoreet suscipit leo. Duis nulla ligula, tincidunt id magna in, maximus rutrum mauris. Aenean iaculis, quam quis auctor convallis, magna justo auctor dui, a maximus odio tellus et dui. Nam sed dui id orci varius luctus. Duis mauris ante, condimentum at turpis sit amet, dignissim euismod ex. Vestibulum at urna a ante mattis semper. Praesent massa odio, efficitur eu bibendum sed, semper eu nunc. Vivamus placerat, velit nec porta finibus, ipsum lacus gravida diam, nec congue nulla nisi a nisl.</p>
-
-            <p class="project-paragraph">Quisque id fermentum nibh. Maecenas placerat dignissim massa in pretium. Sed vel sagittis mauris, eget congue tortor. Nam ac faucibus turpis. Vestibulum viverra consectetur lacus. Morbi quis molestie turpis, ac dignissim arcu. Nulla facilisi. Nunc varius, massa et pharetra tempus, tortor mi molestie augue, at dapibus mauris dolor sit amet tellus. Etiam aliquam erat eu pretium porttitor. Duis ultrices volutpat enim nec tempor. Etiam lacinia, nisi in tristique laoreet, quam nisl dapibus nunc, et euismod massa mi at eros.</p>
+            
         </div>
     </div>
 </body> 

@@ -17,38 +17,64 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     
   <!-- Style Sheet -->
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="css/page.css">
-  <link rel="stylesheet" href="css/template.css">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../css/page.css">
+  <link rel="stylesheet" href="../css/template.css">
     
   <!-- Favicon -->
   <link rel="icon" 
       type="image/png" 
-      href="Images/Projects/favicon.png">
+      href="../Images/Projects/favicon.png">
 
   <title>Yeuk Yu Lee | Project </title>
     
 </head>
 <body>
-    <div class="side-img-container"></div>
-    <div class="project-content-container">
-        <div class="project-content">
+    <div class="project-content-center-container">
+        <div class="project-content-alt">
             <h1 class="page-header">
-                Lindia
+                Music Printer
             </h1>
             <h3 class="project-subheader">
-                R package: Automated Linear Diagnostics
+                An Arduino Hack
             </h3>
             <hr class="section-break">
-            <p class="project-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ut euismod justo, vulputate auctor nisl. Mauris vel malesuada urna, ac ultrices erat. Vivamus aliquam ultricies ex. Nullam dictum quam a nisl ultrices, vitae auctor eros dapibus. Sed sit amet congue ligula. Duis convallis, magna non ultricies congue, nisl metus auctor felis, sed rhoncus augue libero nec metus. Morbi lobortis neque vel diam porta facilisis. Donec a ligula ac quam convallis egestas in a urna. Cras sit amet consectetur mi. Donec malesuada risus non pellentesque tempus. Morbi vitae erat ultricies, facilisis mi sed, accumsan augue. Aliquam sagittis, enim ac varius hendrerit, felis ante volutpat metus, non tempus ex quam eu lorem. Donec sodales pharetra mi, sed eleifend sapien porttitor sed.</p>
+            <p class="project-paragraph">
+                <strong>Context: </strong> I dreamed up this idea one day: <i>what if I can build a portable printer that can continuously spit out music sheet as I play on the piano keyboard?</i> With this printer, I can then quickly play some melody and have the score be ready for me to revisit anytime, not to mention the satisfying sight to see printer printing out one note at a time, listening for commands at my fingertips.</p>
+            
 
-            <p class="project-paragraph">Nulla vitae feugiat justo. Mauris ultricies, purus ut malesuada suscipit, eros enim blandit ante, sed varius augue tortor vitae urna. Ut ac ornare nunc. Sed blandit nisl nisi. Vestibulum eget sapien nec velit egestas scelerisque in in risus. Cras eu urna ex. Nulla vehicula metus et ante sodales, eget commodo metus tempor. In eu varius lacus, pulvinar porttitor urna. Sed porttitor justo at gravida tempor. Quisque placerat, nisi vel cursus imperdiet, erat turpis sodales odio, et efficitur metus tortor blandit est. Fusce mollis luctus felis, in consectetur magna luctus in. Aenean vel consequat libero. Maecenas nunc lorem, dapibus eget dui ac, vulputate tincidunt enim. Etiam congue mi quis felis maximus porta.</p>
-
-            <p class="project-paragraph">Nunc tincidunt nisi ut ultricies tincidunt. Mauris risus eros, consequat vel mauris at, viverra dignissim sapien. Suspendisse porttitor, purus sed congue lacinia, magna dui porta metus, non vestibulum nisi massa in ipsum. Nam ac dui luctus, maximus orci sed, bibendum dolor. Donec luctus nisl quis nunc imperdiet luctus sit amet at arcu. Cras vel est quis tortor rutrum elementum. Nunc lacus massa, convallis at augue in, ullamcorper bibendum nibh. Suspendisse sed vestibulum eros. Aenean eget pretium diam. Vestibulum et nisl euismod, gravida mi nec, rutrum eros. Aenean vitae leo eu lacus ornare pellentesque. </p>
-
-            <p class="project-paragraph">Suspendisse lacinia sed quam in finibus. Mauris dignissim ultricies mauris eu pretium. Nam efficitur hendrerit varius. Vestibulum luctus fermentum euismod. Duis vitae condimentum lorem. Morbi a consectetur eros. Etiam nulla nulla, imperdiet sit amet velit ac, laoreet suscipit leo. Duis nulla ligula, tincidunt id magna in, maximus rutrum mauris. Aenean iaculis, quam quis auctor convallis, magna justo auctor dui, a maximus odio tellus et dui. Nam sed dui id orci varius luctus. Duis mauris ante, condimentum at turpis sit amet, dignissim euismod ex. Vestibulum at urna a ante mattis semper. Praesent massa odio, efficitur eu bibendum sed, semper eu nunc. Vivamus placerat, velit nec porta finibus, ipsum lacus gravida diam, nec congue nulla nisi a nisl.</p>
-
-            <p class="project-paragraph">Quisque id fermentum nibh. Maecenas placerat dignissim massa in pretium. Sed vel sagittis mauris, eget congue tortor. Nam ac faucibus turpis. Vestibulum viverra consectetur lacus. Morbi quis molestie turpis, ac dignissim arcu. Nulla facilisi. Nunc varius, massa et pharetra tempus, tortor mi molestie augue, at dapibus mauris dolor sit amet tellus. Etiam aliquam erat eu pretium porttitor. Duis ultrices volutpat enim nec tempor. Etiam lacinia, nisi in tristique laoreet, quam nisl dapibus nunc, et euismod massa mi at eros.</p>
+            <p class="project-paragraph">I was hooked by this idea — I liked it so much that I decided to do it as a term project for my micro-controller class. This had just been three months since I started learning hardware, but so far Arduino had made it very easy for me to quickly build a hardware toy. With a leap of faith, I decided to move on with this idea.</p>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yeQi-s0GgDw" frameborder="0" allowfullscreen></iframe>
+            
+            <hr class="section-break">
+            <p class="project-paragraph">
+                <strong>Process: </strong> After shopping for the parts on Adafruit, I waited for a week for all the parts to arrive, and that foretold the biggest problem I would encounter — the lack of replacement. When developing software, if I find myself missing something components, I can always run a brew or npm install. But in hardware, a defective part and a hard deadline can definitely make the world blow up.</p>
+            
+            <p class="project-paragraph">The thermal receipt printer was very, very, very hard to work with. The printer works by firing dots on the receipt paper to darken certain region. I tested the printer by printing out sample ascii characters. There were two main issues that I noticed:</p>
+            
+            <p class="project-paragraph">First, the printer prints nowhere near fast enough. By the time I finish playing a note, the printer hasn’t even finish half of the printing. The inability of keeping the speed up will be a huge usability issue.</p>
+            
+            <p class="project-paragraph">Second, the printer works by , but as I was just testing the printer, I noticed that the print was very light. No matter how I adjust the hardware setting, it only goes to certain darkness, which was inconsistent as well.</p>
+            
+            <p class="project-paragraph">For the first problem, I fixed it by hacking the hardware. I opened the printer and soldered in a new port, recommended by this article. It was a bit of a risky move, since no one guarantee it was a reliable recommendation, and soldering was not my strong suite. But luckily it worked like a charm, and I quickly move on to the second problem.</p>
+            
+            <p class="project-paragraph">The second problem took me a to figure out. In order to print the music notes, I had to convert every type of notes into a bitmap, so that the Arduino program can process and successfully print it. If I try to print a straight horizontal line, it would start to print weird gibberish of ascii characters. I brought into Scott’s (my professor) office, and he sat with me for good 40 minutes, checking my code and made sure the wiring was right, but nothing could came out of it. I later realized that this happen every time when I try to print a very wide image or line. The dots that fired by the thermal printer were simply not enough to darken the wide region at a time, and the overloading data causes the printer to print ascii characters. It was a hardware issue that I was not able to bypass.</p>
+            
+            
+            <p class="project-paragraph">For the first problem, I fixed it by hacking the hardware. I opened the printer and soldered in a new port, recommended by this article. It was a bit of a risky move, since no one guarantee it was a reliable recommendation, and soldering was not my strong suite. But luckily it worked like a charm, and I quickly move on to the second problem.</p>
+            
+            <p class="project-paragraph">I remedied that issue by rotating the music score that I was printing out to vertical one. Then it solved the problem of inconsistent darkness of print.</p>
+            
+            <p class="project-paragraph">As for the music score sheet, the original idea was to have a bitmap of five lines, and the micro-controller would use an & operation to overlay the bitmap of music notes on top of it. But it was simply too costly for the Arduino to handle the bitmap manipulation, and so the solution to that was to store bitmap of all notes into the Arduino, and load according to the played note. This was something I was trying to fix if I was given more time, but unfortunately not by the time that it was demoed.</p>
+            
+            <hr class="section-break">
+            
+            <p class="project-paragraph">
+                <strong>Outcome:</strong> When I presented my project to the class, I could see all the heads in the rooms were honing in, waiting to see if a hit on the keyboard is going to cause the printer to print a note. With my sweaty hand, I played a half broken tone of “Mary had a little lamb.” The sound of the firing dots echoed in the room, and the printer was busy doing its job. At the end of the tone, the printer printed a concluding bar, and the score on the receipt paper was a perfect reflection of what I played. The class glanced at it with pure amazement.</p>
+            
+            <p class="project-paragraph">The project was peer graded, and I came first in this graduate class with this Music Printer. There was no word that can describe how I felt.</p>
+            
         </div>
     </div>
 </body> 

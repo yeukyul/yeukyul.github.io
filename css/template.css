@@ -1,10 +1,14 @@
+img {
+    width: 100%;
+}
+
 .side-img-container {
     position: fixed;
     left: 0;
     height: 100%;
     width: 40%;
     top: 0%;
-    background-image: url('../Images/bg/leaves.jpeg');
+    background-image: url('../Images/bg/city.jpg');
     z-index: -1;
 }
 
@@ -170,7 +174,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
     height: 200px;
     width: 100%;
     top: 0%;
-    background-image: url('../Images/bg/leaves.jpeg');
+    background-image: url('../Images/bg/city.jpg');
     z-index: -1;
 }
 
@@ -186,7 +190,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 }
 
 .project-content-alt {
-    margin-top: 100px;
+    margin-top: 150px;
     text-align: left;
 }
 

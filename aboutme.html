@@ -1,37 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
-  <meta name="description" content="" />
+  <meta name="description" content="Yeuk Yu Lee's personal website and portfolio." />
   <meta name="keywords" content="" />
   <meta name="author" content="Yeuk Yu Lee" />
   
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     
   <!-- Style Sheet -->
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../css/page.css">
+  <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="css/card.css">
+  <link rel="stylesheet" href="../css/template.css">
+  <link rel="stylesheet" href="../css/contactme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
   <!-- Favicon -->
   <link rel="icon" 
       type="image/png" 
-      href="Images/Projects/favicon.png">
+      href="../Images/Projects/favicon.png">
 
-  <title>Yeuk Yu Lee | About</title>
+  <title>Yeuk Yu Lee | About Me </title>
+    
 </head>
 <body>
-    <div class="fixed-size container">
-        <h1 class='page-title'>Yeuk Yu Lee</h1>
-        <h1 class="page-heading">About Me</h1>
+    <div class="project-content-center-container">
+        <div class="project-content-alt">
+            <h1 class="page-header">
+                About Me
+            </h1>
+            <hr class="section-break">
+            <p class="project-paragraph">
+                I am an undergrad at Carnegie Mellon, majoring in Statistics with a minor in Computer Science. My passion lays in web development and data visualization. 
+
+            
+            <p class="project-paragraph">
+               There is something beautiful in the notion of giving life to ideas, and being an engineer gives me the power to do so — and I love it.</p>
+
+            <hr class="section-break">
+            
+            <a href="http://linkedin.com/in/yeukyulee">
+             <i class="profile-icon fa fa-linkedin fa-lg email-tooltip" aria-hidden="true"></i>
+            </a>
+            <a href="http://github.com/yeukyul">
+                <i class="profile-icon fa fa-github-alt fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="Images/Resume/yeukyulee_resume.pdf">
+                <i class="profile-icon fa fa-file-text-o fa-lg" aria-hidden="true"></i>
+            </a>
+            
+        </div>
     </div>
-    <div class="fixed-size container">
+    
+     <!-- sidebar menu -->
+    <div class="sliding-menu flex-center-wrapper flex-column left-menu" id="menu">
+     <button class="slider-exit btn top-right" href="#">
+        <i class="fa fa-times"></i> 
+      </button>
+      <ul>
+        <li>
+          <a class="nav-item" href="#">ABOUT ME</a>
+            </li>
+
+        <li>
+          <hr width="50%">
+          </li>
+        <li>
+          <a class="nav-item" href="drawing.html">Drawings</a>
+            </li>
+        <li>
+          <a class="nav-item" href="index.html">Coding Projects</a>
+            </li>
+        <li>
+          <hr width="30%">
+          </li>
         
+        <li>
+            <a href="http://linkedin.com/in/yeukyulee">
+             <i class="profile-icon fa fa-linkedin fa-lg email-tooltip" aria-hidden="true"></i>
+            </a>
+            <a href="http://github.com/yeukyul">
+                <i class="profile-icon fa fa-github-alt fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="Images/Resume/yeukyulee_resume.pdf">
+                <i class="profile-icon fa fa-file-text-o fa-lg" aria-hidden="true"></i>
+            </a>
+            
+          </li>
+        
+      </ul>
     </div>
+    
+    <link rel="stylesheet" href="css/sidebar.css">
+    <script src="js/sliiide.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    
 </body> 
 </html>
 
