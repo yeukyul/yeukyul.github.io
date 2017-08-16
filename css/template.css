@@ -1,5 +1,10 @@
-img {
+.project-img-container {
+    text-align: center;
+}
+
+.project-img {
     width: 100%;
+    max-width: 700px;
 }
 
 .side-img-container {

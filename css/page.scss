@@ -9,9 +9,6 @@ hr.section-break {
     margin: 50px 0 50px 0;
 }
 
-.page-container {
-    margin: 120px 140px 0px 140px;
-}
 
 h1.page-header {
     font-family: Futura, sans-serif;
@@ -47,6 +44,18 @@ h3.page-subheader {
     font-size: 14pt;
 }
 
+.page-container {
+    margin: 120px 140px 0px 140px;
+}
+
+@media screen 
+and (max-width : 2000px) 
+and (min-width : 1500px) {
+    .page-container {
+        margin: 120px 20% 0px 20%;
+    }
+}
+
 @media screen 
 and (max-width : 1000px) 
 and (min-width : 520px) {
@@ -66,5 +75,5 @@ and (max-width : 520px) {
 and (max-width : 800px) {
     .aboutme-container {
             margin: 0;
-        }
+    }
 }
