@@ -32,3 +32,12 @@ h3.page-subheader {
 
 .dark-grey-text {
   color: #939393; }
+
+@media only screen and (max-device-width: 1000px) and (min-device-width: 520px) {
+  .page-container {
+    margin: 120px 80px 0px 80px; } }
+@media only screen and (max-device-width: 520px) {
+  .page-container {
+    margin: 120px 40px 0px 40px; } }
+
+/*# sourceMappingURL=page.css.map */
