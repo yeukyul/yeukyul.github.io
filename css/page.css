@@ -33,11 +33,18 @@ h3.page-subheader {
 .dark-grey-text {
   color: #939393; }
 
-@media only screen and (max-device-width: 1000px) and (min-device-width: 520px) {
+.aboutme-container {
+  margin: 0 100px;
+  font-size: 14pt; }
+
+@media screen and (max-width: 1000px) and (min-width: 520px) {
   .page-container {
     margin: 120px 80px 0px 80px; } }
-@media only screen and (max-device-width: 520px) {
+@media screen and (max-width: 520px) {
   .page-container {
     margin: 120px 40px 0px 40px; } }
+@media screen and (max-width: 800px) {
+  .aboutme-container {
+    margin: 0; } }
 
 /*# sourceMappingURL=page.css.map */
