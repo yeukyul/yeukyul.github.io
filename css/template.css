@@ -7,6 +7,11 @@
     max-width: 500px;
 }
 
+.project-img-lg {
+    width: 100%;
+    max-width: 700px;
+}
+
 .side-img-container {
     position: fixed;
     left: 0;
