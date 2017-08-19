@@ -44,6 +44,7 @@
             
             <div class="project-img-container">
                 <img class="project-img" src="../Images/Documentations/data_explorer/home.png">
+                <figcaption>Home screen of our framework.</figcaption>
             </div>
             
             <hr class="section-break">
@@ -60,6 +61,11 @@
             <p class="project-paragraph">
                 <strong>Process: </strong> During the research phrase, I was looking into data visualization libraries in Java that would be useful in visualizing network. However, libraries like JChart are not very customizable and aesthetically pleasing. My quest turned out to be rather fruitless. I then began to look for ways to integrate a web front-end to a Java backend, since HTML/CSS/JS are the best in constructing a highly interactive, customizable UI, not to mention the powerful D3.js library that can help with visualization.</p>
             
+            <div class="project-img-container">
+                <img class="project-img" src="../Images/Documentations/data_explorer/jchart.png">
+                <figcaption>JChart demo - we thought we could definitely do better than this.</figcaption>
+            </div>
+            
             <p class="project-paragraph">This is when JavaFx came into play. JavaFx is a browser that can receive and emit commands from and to Java backend, while at the same time render web pages like normal browsers do. I was thrilled — but Sean and Vanessa were not so much. They of course love the front-end to be pretty, but JavaFx was definitely not our safest bet, given that communication between Javascript and Java introduced an extra layer of uncertainty. We were not sure if the front-end would be completed within given time.</p>
             
             <p class="project-paragraph">To make sure the idea was worth pursuing, we did a mini test page on the JavaFx, and it was able to listen to command in Java to render a dummy page. I then dived into developing the front-end for the framework, while Sean and Vanessa into their own domain.</p>
@@ -68,12 +74,14 @@
             
             <div class="project-img-container">
                 <img class="project-img" src="../Images/Documentations/data_explorer/coding.JPG">
+                <figcaption>During development.</figcaption>
             </div>
             
              <p class="project-paragraph">There were quite a few unforeseen problems during development, but the real nightmare began when we started to integrate the Java backend and Javascript frontend. When some parts of the UI are not rendering, Sean and I had to put debug statement in all bridges between the Javascript and Java to find out from where the communication was failing. Some of these statements were printed in the Eclipse (Java IDE) console, while some are in the browser. There were also indeterministic behaviors on the page, since some data structure were initialize after they were called for. The sequence between web and backend required particular careful planning.</p>
             
             <div class="project-img-container">
                 <img class="project-img" src="../Images/Documentations/data_explorer/board.JPG">
+                <figcaption>Our crude agile development board.</figcaption>
             </div>
             
              <p class="project-paragraph">During the whole time when we were developing, we carefully monitored our working progress on the white board, carefully planned out the public interfaces for both the backend and the frontend. We were glad that we were able to finish the project before the chime of midnight, and we were really proud of how it turned out. We’re hoping to upload a demo soon!</p>

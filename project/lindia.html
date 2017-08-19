@@ -42,11 +42,34 @@
             <p class="project-paragraph">
                 <strong>Context: </strong> I am a frequent R user for data manipulation and analysis work. In modeling, one simple technique that I always use is linear regression. To assess how well the linear regression fits the model, I often time need to take a quick skim of the regression diagnostics plot. However, the current syntax in base-R graphics (plotting features that comes with R) has made it very tedious to generate such plots, not to mention that crucial graphic types are not included.</p>
             
+            <div class="project-img-container">
+                <img src="../Images/Documentations/lindia/baseR.png">
+                <figcaption>Diagnostics plot using existing base R graphics.</figcaption>
+            </div>
 
             <p class="project-paragraph">I wanted to create a package that would allow users to generate diagnostics plot in a simple comment, while being able to retain the merit of grammar of graphics. Therefore, Lindia (short for linear diagnostics) was built as an extension to ggplot2 to provide streamlined plotting features of linear model diagnostic plots.</p>
             
         
             <p class="project-paragraph">The package allows the user to use one command to output most of the graphs to access fitness of the linear regression to the data (e.g. residual plot, quantile-quantile plot, Cook’s distance plot), and arrange them to output in grid style.</p>
+            
+            <hr class="section-break">
+            <p class="project-paragraph">
+                <strong>R graphics explained: </strong> The traditional base R graphics adopts a painters model, where each geometric is painted on top of existing object or graphs in the canvas. The syntax is simple, yet often confusing and highly uncustomizable, since object that is existed in previous graphs could get carried over.
+            </p>
+            
+            <div class="project-img-container">
+                <img src="../Images/Documentations/lindia/baseR_illustration.png">
+                <figcaption>Base R graphics illustrated. Left: example base R graphics, right: illustration of painter model.</figcaption>
+            </div>
+            
+            <p class="project-paragraph">
+                A more popular alternatives to base R graphics is ggplot2, which adopted grammar of graphics. Picture each geometry on a graph to be a layer-each graph is basically overlaying layers, where each layer can have its own specified geometry and customization. The result of grammar of graphics is a high customizable graphical output, not to mention its more visually appealing outlook.
+            </p>
+            
+            <div class="project-img-container">
+                <img src="../Images/Documentations/lindia/ggplot2_illustration.png">
+                <figcaption>Base R graphics illustrated. Left: example ggplot graphics, right: illustration of grammar of graphics.</figcaption>
+            </div>
             
             
             <hr class="section-break">
@@ -56,6 +79,12 @@
             <p class="project-paragraph">After the package was done developing, we started the first round of dog fooding in the CMU Statistics department. One thing that stroke us as unexpected was that we didn’t account for the size of the regression people would feed into the lindia. Initially when we’re building the package, we tested it with a regression with only about 5 predictor variables, and so all the diagnostics plot were able to fit in a 4 by 3 grid. However, practically speaking, linear regression is used by data scientists to fit many predictor variables at once to assess which could potentially be useful in modeling. Therefore the plots that were cramped into the grid quickly gotten out of hand.</p>
             
             <p class="project-paragraph">To remedy that problem, we added an additional feature that allowed user to specify the number of pages and plots per page in the output. That fixed the problem of diagnosting huge regression.</p>
+            
+            <div class="project-img-container">
+                <img src="../Images/Documentations/lindia/lindia_output.png">
+                <figcaption>Lindia output of a regression with 8 predictor variables.</figcaption>
+            </div>
+            
             
             <hr class="section-break">
             

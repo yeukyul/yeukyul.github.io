@@ -40,49 +40,55 @@
             </h3>
             <hr class="section-break">
             <p class="project-paragraph">
-                <strong>Context: </strong> In this class project for software engineering class, we are building a data visualization framework using Java. Inspired by panther.io, Vanessa, Sean, and I wanted to create a framework that would be useful for network visualization. However, we don’t want the visualization to be limited to music exploration; instead, we want it to be a generic framework that can visualize all kinds of network in general. Some examples would be artwork, book, or articles that are connected by edges that identify how these creations are similar or linked to each other.</p>
+                <strong>Context: </strong> <i>Let’s try something random</i>, we thought, <i>Let’s make a web app that allows user to draw an album art, and we’d play music depends on the “mood” of the artwork</i>. And so Satoru, Sam, David, and I formed a team at PennApps 17 and marched onward with this idea.</p>
             
             <div class="project-img-container">
-                <img class="project-img" src="../Images/Documentations/pennapps/pennapps_functiontable.JPG">
-            </div>
+                    <img class="project-img" src="../Images/Documentations/pennapps/pennapps_drawdio.png">
+                    <figcaption>Snap shot of the home page of our web app.</figcaption>
+                    </div>
+            
             
             <hr class="section-break">
             <p class="project-paragraph">
-                <strong>Prior to development: </strong> After the idea was finalized, we sat down together to finalize the architecture of the framework. The framework we designed has two plugins that users needed to provide: data plugin and UI plugin. In the data plugin, the client would have to specify linkage of current node to next node and how to get relevant description of current node. While in the UI plugin, the user have the liberty to configure components that are rendered in the display panel.</p>
+                <strong>Process: </strong> The name Drawd.io is a combination of the word “draw” and “audio,” as well as a mockery to the modern obsession with applications whose name ended with “.io”</p>
             
-            <p class="project-paragraph">During our discussion, we have made separation of front and back-end our priority. To ensure that our roles are not intertwined in the project, we needed to ensure the front and back end are not highly coupled. We therefore drafted a detailed UML diagram of classes in the framework, as well as the callback functions that the plugin needs to provide.</p>
+            <p class="project-paragraph">During the initial one hour that we have made, we have decided on the tech stack that we are going to be working with. To query music, we are going to use the Spotify API to do album art search as well as getting clips of sound tracks. As for framework, we are going with a Node.js and MongoDB. Since we are planning on building a one page web app, no further libraries except JQuery and gsep were needed.</p>
             
-            <p class="project-paragraph">We therefore split into three roles: Sean was responsible for writing the back-end of the framework, and I merrily took up the front-end part of the framework (specifically UI and data visualization), while Vanessa took care of writing sample plugins for testing and demo purposes.</p>
+            <p class="project-paragraph">Sam was very experienced with back-end, and he was therefore responsible for writing server-side and database. I was both the designer and front-end developer on the project. David helped me with animating elements on the app, while Satoru helped Sam on logic at the back-end.</p>
             
-    
+            <div class="project-img-container">
+                    <img class="project-img" src="../Images/Documentations/pennapps/pennapps_group.JPG">
+                    <figcaption>Our team into our second night of hacking...</figcaption>
+                    </div>
+            
+            <p class="project-paragraph">For the front end, the first hour was all about designing and creating mocks of our UI using Adobe Illustrator. We determined that the web app would be a one-page app given the simplicity of its functionality, and most of the screen transitions would be done using animation.</p>
             <hr class="section-break">
             
             <p class="project-paragraph">
-                <strong>Process: </strong> During the research phrase, I was looking into data visualization libraries in Java that would be useful in visualizing network. However, libraries like JChart are not very customizable and aesthetically pleasing. My quest turned out to be rather fruitless. I then began to look for ways to integrate a web front-end to a Java backend, since HTML/CSS/JS are the best in constructing a highly interactive, customizable UI, not to mention the powerful D3.js library that can help with visualization.</p>
-            
-            <p class="project-paragraph">This is when JavaFx came into play. JavaFx is a browser that can receive and emit commands from and to Java backend, while at the same time render web pages like normal browsers do. I was thrilled — but Sean and Vanessa were not so much. They of course love the front-end to be pretty, but JavaFx was definitely not our safest bet, given that communication between Javascript and Java introduced an extra layer of uncertainty. We were not sure if the front-end would be completed within given time.</p>
-            
-            <p class="project-paragraph">To make sure the idea was worth pursuing, we did a mini test page on the JavaFx, and it was able to listen to command in Java to render a dummy page. I then dived into developing the front-end for the framework, while Sean and Vanessa into their own domain.</p>
-            
-            <p class="project-paragraph">This was my very first few encounters with D3.js. I took a lot of network graph examples from bl.ock.org, and toggled a few lines of code here and there. The result of doing interactive visualization with D3.js was a very glitchy UI: some nodes on the graph did not move even though the UI event had called for update. There was an extra layer of complication since we wanted to specifically track that which node has been clicked and update the position of the graph, as well as appending new nodes. In retrospect, D3 was not the optimal choice for the visualization; in fact, a normal SVG graphic could have suffice in the case in our framework. I was glad that despite all the issues, the UI turned out quite well and was not a major roadblock in our project.</p>
+                During this time, Sam was constantly exploring how to use point-cloud segmentation to do edge detection on the album art user draw and album arts in the database. The conversations between the frontend and backend were mostly “Oh look how cool this is!” or “Wohoo it worked!”, but we mostly worked in parallel (which I later figured is how industry works).</p>
             
             <div class="project-img-container">
-                <img class="project-img" src="../Images/Documentations/data_explorer/coding.JPG">
+                    <img class="project-img" src="../Images/Documentations/pennapps/pennapps_functiontable.JPG">
+                    <figcaption>Little detour in U Penn during the night to see the oldest computer in the world. </figcaption>
+                    </div>
+            
+            <p class="project-paragraph">Later on, a more interesting problem that we went into as a group was: how can we query a matching album art using the Spotify API? The API had a certain querying limit, and so realistically speaking, we were not able to search through the entire database to find a matching album. So a workaround was to populate our database and download as much album art as we can, and use only these pre-downloaded data when we were doing an album search. The result of that was an inaccurate search result. Most of the time, the web app would find a decent album art match, but since the data that we were searching from were not comprehensive, the result was not ideal. During the demo time, we received a lot of “wow” and “meh,” but we had a lot of fun during hacking, so it wasn’t really that big of a deal.</p>
+            
+            <p class="project-paragraph">And here’s a demo video: <a href="https://devpost.com/software/drawdio">https://devpost.com/software/drawdio</a></p>
+            
+             <div class="project-img-container">
+                <img class="project-img" src="../Images/Documentations/pennapps/pennapps_penguin.JPG">
+                 <figcaption>When we're done hacking...</figcaption>
             </div>
-            
-             <p class="project-paragraph">There were quite a few unforeseen problems during development, but the real nightmare began when we started to integrate the Java backend and Javascript frontend. When some parts of the UI are not rendering, Sean and I had to put debug statement in all bridges between the Javascript and Java to find out from where the communication was failing. Some of these statements were printed in the Eclipse (Java IDE) console, while some are in the browser. There were also indeterministic behaviors on the page, since some data structure were initialize after they were called for. The sequence between web and backend required particular careful planning.</p>
-            
-            <div class="project-img-container">
-                <img class="project-img" src="../Images/Documentations/data_explorer/board.JPG">
-            </div>
-            
-             <p class="project-paragraph">During the whole time when we were developing, we carefully monitored our working progress on the white board, carefully planned out the public interfaces for both the backend and the frontend. We were glad that we were able to finish the project before the chime of midnight, and we were really proud of how it turned out. We’re hoping to upload a demo soon!</p>
             
             <hr class="section-break">
             
-            <p class="project-paragraph">
-                <strong>Side note: </strong> The repository on Github was migrated from the original repo that we worked on.</p>
+            <p class="project-paragraph">Even though we weren’t ranked in the competition, this was an awesome first hackathon, and I couldn’t hope for a better team. Looking back, I only had a few months of experience with web development and prototyping tools when hacking, but it did made me realize how much I enjoy front-end development. This experience had since then shaped my passion.</p>
             
+            
+             <p class="project-paragraph">If only I can code fast and furiously in my real job too…</p>
+            
+          
             
         </div>
     </div>

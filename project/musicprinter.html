@@ -45,11 +45,18 @@
 
             <p class="project-paragraph">I was hooked by this idea — I liked it so much that I decided to do it as a term project for my micro-controller class. This had just been three months since I started learning hardware, but so far Arduino had made it very easy for me to quickly build a hardware toy. With a leap of faith, I decided to move on with this idea.</p>
             
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/yeQi-s0GgDw" frameborder="0" allowfullscreen></iframe>
+            <div class="project-img-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yeQi-s0GgDw" frameborder="0" allowfullscreen></iframe>
+                </div>
             
             <hr class="section-break">
             <p class="project-paragraph">
                 <strong>Process: </strong> After shopping for the parts on Adafruit, I waited for a week for all the parts to arrive, and that foretold the biggest problem I would encounter — the lack of replacement. When developing software, if I find myself missing something components, I can always run a brew or npm install. But in hardware, a defective part and a hard deadline can definitely make the world blow up.</p>
+            
+            <div class="project-img-container">
+                    <img class="project-img" src="../Images/Documentations/mp/mp_oled.JPG">
+                    <figcaption>Testing OLED screen.</figcaption>
+                    </div>
             
             <p class="project-paragraph">The thermal receipt printer was very, very, very hard to work with. The printer works by firing dots on the receipt paper to darken certain region. I tested the printer by printing out sample ascii characters. There were two main issues that I noticed:</p>
             
@@ -66,12 +73,27 @@
             
             <p class="project-paragraph">I remedied that issue by rotating the music score that I was printing out to vertical one. Then it solved the problem of inconsistent darkness of print.</p>
             
+            <div class="project-img-container">
+                    <img class="project-img" src="../Images/Documentations/mp/mp_testprint.JPG">
+                    <figcaption>Thermal printer printing the first "dark enough" image.</figcaption>
+                    </div>
+            
             <p class="project-paragraph">As for the music score sheet, the original idea was to have a bitmap of five lines, and the micro-controller would use an & operation to overlay the bitmap of music notes on top of it. But it was simply too costly for the Arduino to handle the bitmap manipulation, and so the solution to that was to store bitmap of all notes into the Arduino, and load according to the played note. This was something I was trying to fix if I was given more time, but unfortunately not by the time that it was demoed.</p>
+            
+            <div class="project-img-container">
+                    <img class="project-img" src="../Images/Documentations/mp/mp_noteprint.JPG">
+                    <figcaption>Testing printing music notes.</figcaption>
+                    </div>
             
             <hr class="section-break">
             
             <p class="project-paragraph">
                 <strong>Outcome:</strong> When I presented my project to the class, I could see all the heads in the rooms were honing in, waiting to see if a hit on the keyboard is going to cause the printer to print a note. With my sweaty hand, I played a half broken tone of “Mary had a little lamb.” The sound of the firing dots echoed in the room, and the printer was busy doing its job. At the end of the tone, the printer printed a concluding bar, and the score on the receipt paper was a perfect reflection of what I played. The class glanced at it with pure amazement.</p>
+            
+            <div class="project-img-container">
+                    <img class="project-img" src="../Images/Documentations/mp/mp_final.JPG">
+                    <figcaption>Adding final touches to the prototype.</figcaption>
+                    </div>
             
             <p class="project-paragraph">The project was peer graded, and I came first in this graduate class with this Music Printer. There was no word that can describe how I felt.</p>
             
