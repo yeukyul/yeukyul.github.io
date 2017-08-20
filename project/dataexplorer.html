@@ -34,16 +34,19 @@
         <div class="project-content-alt">
             <h1 class="page-header">
                 Data Explorer
-            </h1>
+                </h1>
             <h3 class="project-subheader">
                 A Data Visualization Framework in Java
-            </h3>
+                </h3>
+            <h5 class="project-info grey-text">
+                Spring 2017 | Github repo <a href="https://github.com/yeukyul/data_explorer/">here</a>
+                </h5>
             <hr class="section-break">
             <p class="project-paragraph">
-                <strong>Context: </strong> In this class project for software engineering class, we are building a data visualization framework using Java. Inspired by panther.io, Vanessa, Sean, and I wanted to create a framework that would be useful for network visualization. However, we don’t want the visualization to be limited to music exploration; instead, we want it to be a generic framework that can visualize all kinds of network in general. Some examples would be artwork, book, or articles that are connected by edges that identify how these creations are similar or linked to each other.</p>
+                <strong>Context: </strong> In this project for our software engineering class, we are building a data visualization framework using Java. Inspired by <a href="http://panther.io">panther.io</a>, Vanessa, Sean, and I wanted to create a framework that would be useful for network visualization. However, we don’t want the visualization to be limited to music exploration; instead, we want it to be a generic framework that can visualize all kinds of network in general. Some examples would be artwork, book, or articles that are connected by edges that identify how these creations are similar or linked to each other.</p>
             
             <div class="project-img-container">
-                <img class="project-img" src="../Images/Documentations/data_explorer/home.png">
+                <img class="project-img-lg" src="../Images/Documentations/data_explorer/home.png">
                 <figcaption>Home screen of our framework.</figcaption>
             </div>
             
@@ -62,34 +65,46 @@
                 <strong>Process: </strong> During the research phrase, I was looking into data visualization libraries in Java that would be useful in visualizing network. However, libraries like JChart are not very customizable and aesthetically pleasing. My quest turned out to be rather fruitless. I then began to look for ways to integrate a web front-end to a Java backend, since HTML/CSS/JS are the best in constructing a highly interactive, customizable UI, not to mention the powerful D3.js library that can help with visualization.</p>
             
             <div class="project-img-container">
-                <img class="project-img" src="../Images/Documentations/data_explorer/jchart.png">
+                <img class="project-img-lg" src="../Images/Documentations/data_explorer/jchart.png">
                 <figcaption>JChart demo - we thought we could definitely do better than this.</figcaption>
             </div>
             
-            <p class="project-paragraph">This is when JavaFx came into play. JavaFx is a browser that can receive and emit commands from and to Java backend, while at the same time render web pages like normal browsers do. I was thrilled — but Sean and Vanessa were not so much. They of course love the front-end to be pretty, but JavaFx was definitely not our safest bet, given that communication between Javascript and Java introduced an extra layer of uncertainty. We were not sure if the front-end would be completed within given time.</p>
+            <p class="project-paragraph">This is when <a href="http://docs.oracle.com/javase/8/javase-clienttechnologies.htm">JavaFx</a> came into play. JavaFx is a browser that can receive and emit commands from and to Java backend, while at the same time render web pages like normal browsers do. I was thrilled — but Sean and Vanessa were not so much. They of course love the front-end to be pretty, but JavaFx was definitely not our safest bet, given that communication between Javascript and Java introduced an extra layer of uncertainty. We were not sure if the front-end would be completed within given time.</p>
             
             <p class="project-paragraph">To make sure the idea was worth pursuing, we did a mini test page on the JavaFx, and it was able to listen to command in Java to render a dummy page. I then dived into developing the front-end for the framework, while Sean and Vanessa into their own domain.</p>
             
-            <p class="project-paragraph">This was my very first few encounters with D3.js. I took a lot of network graph examples from bl.ock.org, and toggled a few lines of code here and there. The result of doing interactive visualization with D3.js was a very glitchy UI: some nodes on the graph did not move even though the UI event had called for update. There was an extra layer of complication since we wanted to specifically track that which node has been clicked and update the position of the graph, as well as appending new nodes. In retrospect, D3 was not the optimal choice for the visualization; in fact, a normal SVG graphic could have suffice in the case in our framework. I was glad that despite all the issues, the UI turned out quite well and was not a major roadblock in our project.</p>
+            <p class="project-paragraph">This was my very first few encounters with D3.js. I took a lot of network graph examples from <a href="https://bl.ocks.org/">bl.ock.org</a>, and toggled a few lines of code here and there. The result of doing interactive visualization with D3.js was a very glitchy UI: some nodes on the graph did not move even though the UI event had called for update. There was an extra layer of complication since we wanted to specifically track that which node has been clicked and update the position of the graph, as well as appending new nodes. In retrospect, D3 was not the optimal choice for the visualization; in fact, a normal SVG graphic could have suffice in the case in our framework. I was glad that despite all the issues, the UI turned out quite well and was not a major roadblock in our project.</p>
             
             <div class="project-img-container">
-                <img class="project-img" src="../Images/Documentations/data_explorer/coding.JPG">
+                <img class="project-img-lg" src="../Images/Documentations/data_explorer/coding.JPG">
                 <figcaption>During development.</figcaption>
             </div>
             
              <p class="project-paragraph">There were quite a few unforeseen problems during development, but the real nightmare began when we started to integrate the Java backend and Javascript frontend. When some parts of the UI are not rendering, Sean and I had to put debug statement in all bridges between the Javascript and Java to find out from where the communication was failing. Some of these statements were printed in the Eclipse (Java IDE) console, while some are in the browser. There were also indeterministic behaviors on the page, since some data structure were initialize after they were called for. The sequence between web and backend required particular careful planning.</p>
             
             <div class="project-img-container">
-                <img class="project-img" src="../Images/Documentations/data_explorer/board.JPG">
+                <img class="project-img-lg" src="../Images/Documentations/data_explorer/board.JPG">
                 <figcaption>Our crude agile development board.</figcaption>
             </div>
             
              <p class="project-paragraph">During the whole time when we were developing, we carefully monitored our working progress on the white board, carefully planned out the public interfaces for both the backend and the frontend. We were glad that we were able to finish the project before the chime of midnight, and we were really proud of how it turned out. We’re hoping to upload a demo soon!</p>
             
+            <div class="project-img-container">
+                <img class="project-img-lg" src="../Images/Documentations/data_explorer/menu.png">
+                <figcaption>More detail of the framework: Plug-in selection.</figcaption>
+            </div>
+            
+            <br>
+            
+            <div class="project-img-container">
+                <img class="project-img-lg" src="../Images/Documentations/data_explorer/node.png">
+                <figcaption>More detail of the framework: Network visualization.</figcaption>
+            </div>
+            
             <hr class="section-break">
             
             <p class="project-paragraph">
-                <strong>Side note: </strong> The repository on Github was migrated from the original repo that we worked on.</p>
+                <strong>Side note: </strong> The <a href="https://github.com/yeukyul/data_explorer/">repository</a> on Github was migrated from the original repo that we worked on.</p>
             
             
         </div>

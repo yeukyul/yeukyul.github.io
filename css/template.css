@@ -40,12 +40,18 @@
     text-align: left;
 }
 
-h3.project-subheader {
+.project-subheader {
     font-family: Avenir, sans-serif;
     font-weight: 100;
     color: #6a869f;
     font-size: 20pt;
     margin: 10px 0 20px 0;
+}
+
+.project-info {
+    font-family: Avenir, sans-serif;
+    font-size: 13pt;
+    margin: 5px 0;
 }
 
 p.project-paragraph {

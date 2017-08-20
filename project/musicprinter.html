@@ -38,6 +38,9 @@
             <h3 class="project-subheader">
                 An Arduino Hack
             </h3>
+            <h5 class="project-info grey-text">
+                Spring 2016 | Youtube demo <a href="https://www.youtube.com/watch?v=yeQi-s0GgDw">here</a>
+                </h5>
             <hr class="section-break">
             <p class="project-paragraph">
                 <strong>Context: </strong> I dreamed up this idea one day: <i>what if I can build a portable printer that can continuously spit out music sheet as I play on the piano keyboard?</i> With this printer, I can then quickly play some melody and have the score be ready for me to revisit anytime, not to mention the satisfying sight to see printer printing out one note at a time, listening for commands at my fingertips.</p>
@@ -51,7 +54,7 @@
             
             <hr class="section-break">
             <p class="project-paragraph">
-                <strong>Process: </strong> After shopping for the parts on Adafruit, I waited for a week for all the parts to arrive, and that foretold the biggest problem I would encounter — the lack of replacement. When developing software, if I find myself missing something components, I can always run a brew or npm install. But in hardware, a defective part and a hard deadline can definitely make the world blow up.</p>
+                <strong>Process: </strong> After shopping for the parts on <a href="https://www.adafruit.com/">Adafruit</a>, I waited for a week for all the parts to arrive, and that foretold the biggest problem I would encounter — the lack of replacement. When developing software, if I find myself missing something components, I can always run a brew or npm install. But in hardware, a defective part and a hard deadline can definitely make the world blow up.</p>
             
             <div class="project-img-container">
                     <img class="project-img" src="../Images/Documentations/mp/mp_oled.JPG">
@@ -64,12 +67,10 @@
             
             <p class="project-paragraph">Second, the printer works by , but as I was just testing the printer, I noticed that the print was very light. No matter how I adjust the hardware setting, it only goes to certain darkness, which was inconsistent as well.</p>
             
-            <p class="project-paragraph">For the first problem, I fixed it by hacking the hardware. I opened the printer and soldered in a new port, recommended by this article. It was a bit of a risky move, since no one guarantee it was a reliable recommendation, and soldering was not my strong suite. But luckily it worked like a charm, and I quickly move on to the second problem.</p>
+            <p class="project-paragraph">For the first problem, I fixed it by hacking the hardware. I opened the printer and soldered in a new port, recommended by <a href="https://learn.adafruit.com/mini-thermal-receipt-printer/hacking">this article</a>. It was a bit of a risky move, since no one guarantee it was a reliable recommendation, and soldering was not my strong suite. But luckily it worked like a charm, and I quickly move on to the second problem.</p>
             
             <p class="project-paragraph">The second problem took me a to figure out. In order to print the music notes, I had to convert every type of notes into a bitmap, so that the Arduino program can process and successfully print it. If I try to print a straight horizontal line, it would start to print weird gibberish of ascii characters. I brought into Scott’s (my professor) office, and he sat with me for good 40 minutes, checking my code and made sure the wiring was right, but nothing could came out of it. I later realized that this happen every time when I try to print a very wide image or line. The dots that fired by the thermal printer were simply not enough to darken the wide region at a time, and the overloading data causes the printer to print ascii characters. It was a hardware issue that I was not able to bypass.</p>
             
-            
-            <p class="project-paragraph">For the first problem, I fixed it by hacking the hardware. I opened the printer and soldered in a new port, recommended by this article. It was a bit of a risky move, since no one guarantee it was a reliable recommendation, and soldering was not my strong suite. But luckily it worked like a charm, and I quickly move on to the second problem.</p>
             
             <p class="project-paragraph">I remedied that issue by rotating the music score that I was printing out to vertical one. Then it solved the problem of inconsistent darkness of print.</p>
             
