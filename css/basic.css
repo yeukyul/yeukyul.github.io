@@ -1,0 +1,124 @@
+* {
+  font-family: Avenir, sans-serif; }
+
+body {
+  padding-bottom: 70px; }
+
+.tooltip {
+  display: none;
+  position: absolute;
+  border: 1px solid #333;
+  background-color: #728AA3;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  font-size: 12px Arial; }
+
+/* relative position classes */
+.centered {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%); }
+
+.center {
+  left: 50%;
+  text-align: center; }
+
+.hidden {
+  display: none; }
+
+h1.page-title {
+  font-family: Avenir, sans-serif;
+  color: #bcbcbc;
+  font-size: 40pt; }
+
+.row {
+  padding: 10px; }
+
+a.card-url {
+  text-decoration: none;
+  color: black; }
+
+.icon-container {
+  padding-top: 50px; }
+
+.profile-icon {
+  color: #151D3C;
+  margin: 10px; }
+
+.profile-icon:hover {
+  color: #fff; }
+
+.fa {
+  font-size: 20pt; }
+
+.top-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  background-color: transparent; }
+
+footer {
+  margin: 20px 0 20px 0;
+  color: #b3b3b3; }
+
+.aboutme-container {
+  margin: 0 100px;
+  font-size: 14pt; }
+
+.main-page-container {
+  padding: 10% 15% 0% 15%; }
+
+/* Smartphones (portrait and landscape) ----------- */
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */ }
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 800px) {
+  .side-img-container {
+    position: static;
+    height: 300px;
+    width: 100%; }
+  .project-content-container {
+    position: static;
+    height: auto;
+    overflow: auto;
+    width: 100%; }
+  .project-content {
+    margin-top: 75px; }
+  hr.section-break {
+    margin: 20px 0 20px 0; } }
+
+@media only screen and (max-width: 400px) {
+  .side-img-container {
+    height: 150px; }
+  .project-content {
+    margin-top: 50px; } }
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */ }
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */ }
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */ }
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */ }
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */ }
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */ }
