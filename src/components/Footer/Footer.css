@@ -1,0 +1,23 @@
+
+footer {
+    padding: 70px 40px 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+footer > div {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 630px) {
+    .right {
+        display: none;
+    }
+}

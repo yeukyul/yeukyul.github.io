@@ -1,0 +1,57 @@
+* {
+  font-family: 'Nunito', sans-serif;
+}
+p {
+  font-size: 16px;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.eyebrow {
+  background-color: #444;
+  width: 50px;
+  height: 4px;
+  margin: 10px 0;
+}
+
+.page-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 60px;
+}
+
+.section-container {
+  padding: 50px 30px;
+  position: relative;
+}
+.fixed-container {
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn {
+  border: 2px #444 solid;
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  letter-spacing: 0.8px;
+  font-weight: 700;
+  color: #444;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn:hover {
+  border-color: #000;
+  color: #000;
+}
+@media screen and (max-width: 700px) {
+  .btn {
+    padding: 5px 10px;
+    margin-top: 10px;
+  }
+}
