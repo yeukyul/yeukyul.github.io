@@ -34,7 +34,7 @@ html {
   margin: 0 auto;
 }
 
-.btn {
+.btn-like-link {
   border: 2px #444 solid;
   border-radius: 20px;
   padding: 10px 20px;
@@ -44,14 +44,16 @@ html {
   color: #444;
   cursor: pointer;
   white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
 }
-.btn:hover {
+.btn-like-link:hover {
   border-color: #000;
   color: #000;
 }
 @media screen and (max-width: 700px) {
-  .btn {
+  .btn-like-link {
     padding: 5px 10px;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 }

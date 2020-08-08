@@ -9,6 +9,7 @@ footer {
     position: absolute;
     left: 0;
     bottom: 0;
+    color: #333;
 }
 
 footer > div {
@@ -19,5 +20,8 @@ footer > div {
 @media screen and (max-width: 630px) {
     .right {
         display: none;
+    }
+    footer {
+        padding: 70px 15px 20px;
     }
 }

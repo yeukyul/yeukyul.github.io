@@ -4,6 +4,7 @@ import cmu_logo from "../../static/images/cmu_logo.png";
 import chegg_logo from "../../static/images/chegg_logo.jpg";
 import sjpl_logo from "../../static/images/SJPL_logo.jpeg";
 import cmute_logo from "../../static/images/cmute_logo.png";
+import resume from "../../static/document/yeukyulee_resume.pdf";
 
 //TODO: extract container styling to global level
 export default function ResumeSection() {
@@ -14,7 +15,7 @@ export default function ResumeSection() {
                 <div className="header-row">
                     <div className="page-heading">Experience</div>
                     <div className="btn-container">
-                        <button className="btn">DOWNLOAD PDF</button>
+                        <a href={resume} className="btn-like-link" download>DOWNLOAD PDF</a>
                     </div>
                 </div>
                 <div className="resume-content">
@@ -27,6 +28,7 @@ export default function ResumeSection() {
                                         <img src={chegg_logo} alt="Chegg Logo"></img>
                                     </div>
                                     <div>
+                                        <div class="eyebrow narrow-visual-guide" />
                                         <div className="entry-name">Chegg Inc.</div>
                                         <div className="entry-subtext">Santa Clara, CA</div>
                                     </div>
@@ -54,6 +56,7 @@ export default function ResumeSection() {
                                         <img src={cmu_logo} alt="Carnegie Mellon Logo"></img>
                                     </div>
                                     <div>
+                                    <   div class="eyebrow narrow-visual-guide" />
                                         <div className="entry-name">Carnegie Mellon University</div>
                                         <div className="entry-subtext">Pittsburgh, PA</div>
                                     </div>
@@ -82,6 +85,7 @@ export default function ResumeSection() {
                                         <img src={cmute_logo} alt="CMU Tech and Entreprenurship Logo"></img>
                                     </div>
                                     <div>
+                                        <div class="eyebrow narrow-visual-guide" />
                                         <div className="entry-name">Carnegie Mellon Tech &amp; Entrepreneurship (Bay Area)</div>
                                         <div className="title">Community Manager</div>
                                         <p>
@@ -98,6 +102,7 @@ export default function ResumeSection() {
                                         <img src={sjpl_logo} alt="San Jose Public Library Logo"></img>
                                     </div>
                                     <div>
+                                        <div class="eyebrow narrow-visual-guide" />
                                         <div className="entry-name">San Jose Public Library (SJPL)</div>
                                         <div className="title">Volunteer</div>
                                         <p>
@@ -118,6 +123,7 @@ export default function ResumeSection() {
                                     <img src={cmu_logo} alt="Carnegie Mellon Logo"></img>
                                 </div>
                                 <div>
+                                    <div class="eyebrow narrow-visual-guide" />
                                     <div className="entry-name">Carnegie Mellon University '18</div>
                                     <div className="entry-subtext">Pittsburgh, PA</div>
                                     <p>Bachelor of Science in Statisitcs</p>

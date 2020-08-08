@@ -20,7 +20,8 @@
 }
 .img-container {
     width: 50%;
-    max-width: 500px
+    max-width: 500px;
+    margin-right: 40px;
 }
 .img-container > img {
     width: 100%;
@@ -33,7 +34,7 @@
 .content-container {
     width: 40%;
     max-width: 500px;
-    margin: 0 0 0 60px;
+    margin: 0 0 0 30px;
 }
 .page-description > p {
     margin-top: 10px;
@@ -64,7 +65,10 @@
     .content-container {
         width: 40%;
         max-width: 500px;
-        margin: 0 0 0 25px;
+        margin: 0 0 0 30px;
+    }
+    .img-container {
+        margin-right: 0;
     }
 }
 @media screen and (max-width: 700px) {
