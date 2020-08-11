@@ -28,7 +28,7 @@ export default function ResumeSection() {
                                         <img src={chegg_logo} alt="Chegg Logo"></img>
                                     </div>
                                     <div>
-                                        <div class="eyebrow" />
+                                        <div class="eyebrow narrow-visual-guide" />
                                         <div className="entry-name">Chegg Inc.</div>
                                         <div className="entry-subtext">Santa Clara, CA</div>
                                     </div>
@@ -56,7 +56,7 @@ export default function ResumeSection() {
                                         <img src={cmu_logo} alt="Carnegie Mellon Logo"></img>
                                     </div>
                                     <div>
-                                    <   div class="eyebrow" />
+                                    <   div class="eyebrow narrow-visual-guide" />
                                         <div className="entry-name">Carnegie Mellon University</div>
                                         <div className="entry-subtext">Pittsburgh, PA</div>
                                     </div>
