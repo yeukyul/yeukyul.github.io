@@ -3,6 +3,7 @@ import me from "../../static/images/me.jpg";
 import "./HeaderSection.css";
 
 export default function HeaderSection() {
+    // 
     return (
         <div className="section-container">
             <div className="left-bg-decorator" />

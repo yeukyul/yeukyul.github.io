@@ -20,12 +20,12 @@
 }
 .img-container {
     width: 50%;
-    max-width: 500px;
+    max-width: 450px;
     margin-right: 40px;
 }
 .img-container > img {
     width: 100%;
-    max-width: 500px;
+    max-width: 450px;
     box-shadow: 0px 0px 10px #888888;
 }
 .img-container > .img-description {
@@ -37,7 +37,7 @@
     margin: 0 0 0 30px;
 }
 .page-description > p {
-    margin-top: 10px;
+    margin: 10px 0 15px;
     font-size: 20px;
 }
 

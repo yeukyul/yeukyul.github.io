@@ -12,9 +12,9 @@
 }
 
 .navlink.active {
-    border-bottom: 5px #000 solid;
+    border-bottom: 5px #444 solid;
     font-weight: 900;
-    color: #000;
+    color: #444;
 }
 
 @media screen and (max-width: 600px) {

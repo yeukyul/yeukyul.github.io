@@ -1,6 +1,6 @@
 
 footer {
-    padding: 70px 40px 20px;
+    padding: 0 40px 20px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -13,14 +13,15 @@ footer {
 }
 
 footer > div {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
+    font-size: 18px;
+}
+.footer-icon {
+    /* ugh webkit */
+    color: #333 !important; 
+    font-size: 18px;
 }
 
 @media screen and (max-width: 630px) {
-    .right {
-        display: none;
-    }
     footer {
         padding: 70px 15px 20px;
     }

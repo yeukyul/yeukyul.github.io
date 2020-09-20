@@ -1,6 +1,7 @@
 import React from 'react';
 import HeaderSection from '../../components/HeaderSection';
-import ResumeSection from '../../components/ResumeSection';
+import IntroSection from '../../components/IntroSection';
+import ContactMeSection from '../../components/ContactMeSection';
 import {Animated} from "react-animated-css";
 
 export default function AboutView() {
@@ -8,7 +9,8 @@ export default function AboutView() {
         <>
             <Animated animationInDuration={2000} isVisible={true}>
                 <HeaderSection />
-                <ResumeSection />
+                <IntroSection />
+                <ContactMeSection />
             </Animated>
         </>
     );
