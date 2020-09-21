@@ -20,16 +20,12 @@ function App() {
             <nav className="navbar">
                 <NavLink className="navlink" activeClassName="active" to="/" exact={true}>About</NavLink>
                 <NavLink className="navlink" activeClassName="active" to="/projects">Projects</NavLink>
-                <NavLink className="navlink" activeClassName="active" to="/writings">Writings</NavLink>
             </nav>
             <Switch>
               <Route exact path="/">
                 <AboutView />
               </Route>
               <Route exact path="/projects">
-                <Construction />
-              </Route>
-              <Route exact path="/writings">
                 <Construction />
               </Route>
             </Switch>

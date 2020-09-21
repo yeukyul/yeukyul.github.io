@@ -1,6 +1,5 @@
 import React from 'react';
 import "./IntroSection.css";
-import resume from "../../static/document/yeukyulee_resume.pdf";
 import EntryLine from "../EntryLine";
 import Entry from "../Entry";
 import StatementSection from "../StatementSection";
@@ -42,7 +41,7 @@ export default function IntroSection() {
                                 iconClass={"fas fa-graduation-cap"}
                                 title={"Attended the UC Santa Cruz Extension for Continuous Professional Development"}
                             >
-                                Completed the project management courses - "Roles of a Project Manager" and "Leadership and Communication".
+                                Completed the project management courses - <i>Roles of a Project Manager</i> and <i>Leadership and Communication</i>.
                             </EntryLine>
                         </Entry>
                     </StatementSection>
@@ -60,7 +59,7 @@ export default function IntroSection() {
                                 iconClass={"fab fa-slack"}
                                 title={"Launched Engagement Initiatives"}
                             >
-                                In a Alumni Community with now more than 1.5k Members
+                                In an alumni community with now more than 1.5k members
                             </EntryLine>
                         </Entry>
                         <Entry header={"As a Course Instructor and Volunteer at the San Jose Public Library"}>
@@ -110,11 +109,10 @@ export default function IntroSection() {
                         </Entry>
                         <Entry header={"Pour heart and time into these projects"}>
                             <ul>
-                                <li>Carnegie Mellon FCE (Faculty Course Evaluation) Visualizer (Hackathon winner. Later awarded with Social Impact Prize in ImpactCMU).</li>
+                                <li>Carnegie Mellon FCE (Faculty Course Evaluation) Visualizer (hackathon winner)</li>
                                 <li><a href="https://github.com/yeukyul/lindia">R Package: Lindia</a></li>
-                                <li>Picasso In a Box</li>
-                                <li>Music Printer</li>
                             </ul>
+                            <p>...Still in the process of uploading other documented projects. Please check back later.</p>
                         </Entry>
                     </StatementSection>
                 </div>
