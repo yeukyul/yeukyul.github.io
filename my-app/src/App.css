@@ -8,7 +8,9 @@ html {
   position: relative;
   min-height: 100%;
 }
-
+body {
+  padding-bottom: 100px;
+}
 .eyebrow {
   background-color: #444;
   width: 50px;
@@ -20,6 +22,14 @@ html {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 600;
   font-size: 60px;
+}
+.page-subheading {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+.heading-font {
+  font-family: 'Cormorant Garamond', serif;
 }
 
 .section-container {
@@ -34,6 +44,13 @@ html {
   margin: 0 auto;
 }
 
+.fixed-container-lg {
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
 .btn-like-link {
   border: 2px #444 solid;
   border-radius: 20px;
@@ -48,6 +65,8 @@ html {
   display: inline-block;
 }
 .btn-like-link:hover {
+  border-radius: 20px;
+  padding: 10px 20px;
   border-color: #000;
   color: #000;
 }
@@ -73,4 +92,30 @@ a:hover {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.5px;
+}
+.sm-margin-horizontal {
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 100%;
+}
+.md-margin-horizontal {
+  margin-left: 25px;
+  margin-right: 25px;
+  max-width: 100%;
+}
+.sm-margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.md-margin {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.lg-margin {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.fit-img-container {
+  width: 99%;
+  max-height: 100%;
 }

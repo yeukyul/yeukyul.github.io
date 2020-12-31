@@ -1,0 +1,38 @@
+.project-heading {
+    font-size: 30px;
+    font-weight: 500;
+}
+.project-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.narrow-margin {
+    margin: 10px 0 !important;
+}
+.carousel-container {
+    width: 500px;
+}
+@media only screen and (max-width: 600px) {
+    .carousel-container {
+        width: 100%;
+    }
+}
+.slick-prev:before, .slick-next:before {
+    color: black !important;
+}
+.align-start-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-flow: row wrap;
+}
+.project-description > .paragraph {
+    margin: 10px 0;
+    max-width: 400px;
+    max-height: 500px;
+}
+.bordered-img {
+    border: 2px solid #aaa;
+}

@@ -1,0 +1,17 @@
+.badge {
+    letter-spacing: 2px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 800;
+    font-size: 13px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.hardware {
+    background-color: #F62681;
+}
+.software {
+    background-color: #24A0ED;
+}

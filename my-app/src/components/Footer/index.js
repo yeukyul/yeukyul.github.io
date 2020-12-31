@@ -6,7 +6,7 @@ export default function Footer() {
         <footer>
             <div className="left"></div>
             <div className="right">
-                Hosted on <i class="fab fa-github" aria-label="Github Logo"></i>. 
+                Hosted on <i className="fab fa-github" aria-label="Github Logo"></i>. 
                 Source code <a href="https://github.com/yeukyul/yeukyul.github.io">here</a>.
             </div> 
             {/* <div className="right">

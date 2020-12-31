@@ -1,9 +1,7 @@
 .row {
-    display: flex;
     align-content: center;
     text-align: left;
     margin: 20px 0;
-    flex-flow: row wrap;
 }
 .header-row {
     display: flex;

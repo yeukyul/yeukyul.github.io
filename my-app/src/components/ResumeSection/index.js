@@ -4,6 +4,8 @@ import cmu_logo from "../../static/images/cmu_logo.png";
 import chegg_logo from "../../static/images/chegg_logo.jpg";
 import sjpl_logo from "../../static/images/SJPL_logo.jpeg";
 import cmute_logo from "../../static/images/cmute_logo.png";
+import mc_logo from "../../static/images/merchant_candy_logo.svg";
+import aws_logo from "../../static/images/aws_logo.jpeg";
 import resume from "../../static/document/yeukyulee_resume.pdf";
 
 //TODO: extract container styling to global level
@@ -11,16 +13,36 @@ export default function ResumeSection() {
     return (
         <div className="section-container">
             <div className="fixed-container">
-                <div className="eyebrow"></div>
                 <div className="header-row">
                     <div className="page-heading">Experience</div>
                     <div className="btn-container">
-                        <a href={resume} className="btn-like-link" download>DOWNLOAD PDF</a>
+                        <a href={resume} className="btn-like-link" download>
+                            RESUME &nbsp;
+                            <i class="fas fa-download"></i>
+                        </a>
                     </div>
                 </div>
                 <div className="resume-content">
                     <div className="row">
                         <div className="rowname">Work</div>
+                        <div className="entry">
+                                <div className="entry-header v-center">
+                                    <div className="entry-logo">
+                                        <img src={mc_logo} alt="Merchant Candy Logo"></img>
+                                    </div>
+                                    <div>
+                                    <   div class="eyebrow narrow-visual-guide" />
+                                        <div className="entry-name">Merchant Candy</div>
+                                        <div className="entry-subtext">Emeryville, CA</div>
+                                    </div>
+                                </div>
+                                <div className="entry-progression">
+                                    <div className="title-container">
+                                        <div className="title">Software Engineer</div>
+                                        <p className="years">Oct 2020 - Present</p>
+                                    </div>
+                                </div>
+                            </div>
                         <div className="entries">
                             <div className="entry">
                                 <div className="entry-header v-center">
@@ -36,7 +58,7 @@ export default function ResumeSection() {
                                 <div className="entry-progression">
                                     <div className="title-container">
                                         <div className="title">Software Engineer II</div>
-                                        <p className="years">Dec 2019 - Present</p>
+                                        <p className="years">Dec 2019 - Oct 2020</p>
                                         <p>Front-end engineer and the scrum master of the front-end commerce team. </p>
                                     </div>
                                     <div className="title-container">
@@ -65,7 +87,7 @@ export default function ResumeSection() {
                                     <div className="title-container">
                                         <div className="title">Teaching Assistant</div>
                                         <p className="years">Dec 2019 - Present</p>
-                                        <p>For following courses: </p>
+                                        <p>For the following courses: </p>
                                         <ul>
                                             <li>Web Application Development (Jan - May 2018)</li>
                                             <li>Statistical Graphics and Visualization (Aug - Dec 2017)</li>
@@ -117,26 +139,39 @@ export default function ResumeSection() {
                     </div>
                     <div className="row">
                         <div className="rowname">Education</div>
-                        <div className="entry">
-                            <div className="entry-header">
-                                <div className="entry-logo">
-                                    <img src={cmu_logo} alt="Carnegie Mellon Logo"></img>
-                                </div>
-                                <div>
-                                    <div class="eyebrow narrow-visual-guide" />
-                                    <div className="entry-name">Carnegie Mellon University '18</div>
-                                    <div className="entry-subtext">Pittsburgh, PA</div>
-                                    <p>Bachelor of Science in Statisitcs</p>
-                                    <p>Minor in Computer Science</p>
-                                    <p>Graduated with University and College Honors</p>
+                        <div>
+                            <div className="entry">
+                                <div className="entry-header">
+                                    <div className="entry-logo">
+                                        <img src={cmu_logo} alt="Carnegie Mellon Logo"></img>
+                                    </div>
+                                    <div>
+                                        <div class="eyebrow narrow-visual-guide" />
+                                        <div className="entry-name">Carnegie Mellon University '18</div>
+                                        <div className="entry-subtext">Pittsburgh, PA</div>
+                                        <p><strong>Bachelor of Science in Statistics</strong></p>
+                                        <p>Minor in Computer Science</p>
+                                        <p>Graduated with University and College Honors</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="row">
                         <div className="rowname">Certification</div>
-                        <div className="entry one-liner">
-                            Amazon Web Services (AWS) Developer Associate 2019
+                        <div>
+                            <div className="entry">
+                                <div className="entry-header">
+                                    <div className="entry-logo">
+                                        <img src={aws_logo} alt="AWS Logo"></img>
+                                    </div>
+                                    <div>
+                                    <div class="eyebrow narrow-visual-guide" />
+                                <div className="entry-name">Amazon Web Services (AWS)</div>
+                                <div className="entry-subtext">Developer Associate 2019</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="row">
