@@ -17,7 +17,7 @@ function Carousel(props) {
     const renderItems = (items) => (
         items.map(item => {
             return item.rawHTML ? item.rawHTML : (
-                <div>
+                <div key={item.mediaSrc}>
                     <img src={item.mediaSrc} className={`fit-img-container ${item.border ? 'bordered-img' : ''}`}/>
                     {item.caption && (<p className="sm-margin">{item.caption}</p>)}
                 </div>
