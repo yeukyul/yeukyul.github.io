@@ -106,7 +106,7 @@ export default function ProjectView() {
                     badge="Microcontroller"
                     type="hardware">
                     <div width="500">
-                        <iframe width={window.innerWidth - 60} height="315" src="https://www.youtube.com/embed/yeQi-s0GgDw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe width={Math.min(500, window.innerWidth - 60)} height="315" src="https://www.youtube.com/embed/yeQi-s0GgDw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </ProjectHeadline>
                 {/* Lindia */}
