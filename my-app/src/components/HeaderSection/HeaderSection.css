@@ -36,6 +36,12 @@
     max-width: 500px;
     margin: 0 0 0 30px;
 }
+.my-name > p {
+    margin: 5px 0 15px;
+    font-size: 20px;
+    color: #666;
+}
+
 .page-description > p {
     margin: 10px 0 15px;
     font-size: 20px;

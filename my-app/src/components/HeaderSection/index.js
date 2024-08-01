@@ -15,9 +15,12 @@ export default function HeaderSection() {
                 </div>
                 <div className="content-container">
                     <div className="eyebrow"></div>
-                    <div className="page-heading">YeukYu Lee</div>
+                    <div className="page-heading">Tiffany Lee</div>
+                    <div className="my-name">
+                        <p>Lee Yeuk Yu （李若愉）</p>
+                    </div>
                     <div className="page-description">
-                        <p>Front end developer based in San Francisco Bay Area. Skilled in React, Redux, Next.js, and other modern web application frameworks.</p>
+                        <p>Front-end engineer based in New York. Skilled in React, Redux, Next.js, and other modern web application frameworks.</p>
                         <div className="icon-bar">
                             <a className="icon-link" href="http://linkedin.com/in/yeukyulee">
                                 <i className="profile-icon fa fa-linkedin fa-lg email-tooltip" aria-hidden="true"></i>
